@@ -49488,7 +49488,7 @@ var DEMO_REPORT = {
   date: "2025-03-14T10:22:00.000Z",
   filename: "sales-call-acme-corp-Q1.mp3",
   hasDiarization: true,
-  pdfAvailable: false,
+  pdfAvailable: true,
   transcript: {
     id: "demo",
     fullText: "Hi Sarah, thanks for making time today. I wanted to walk you through what we've been seeing in your sector. Um, so first of all, how has the quarter been treating you? Yeah, that's actually a great point. We've seen similar patterns across our client base. Can you tell me more about the budget cycle for Q2? Basically we have about three months to close this. What are the main blockers on your end right now? That makes sense. Uh, so if we could address the integration concern, would that move things forward? Absolutely. And you know, we have a dedicated onboarding team that handles exactly that. What does your procurement process look like from here? Right, so the legal review typically takes two to three weeks on our side as well. Can we schedule a technical call with your IT team next week? That sounds great. Um, I'll send over the security documentation today. One more thing \u2014 what would success look like for you at the six-month mark? Perfect. I think we're well-aligned on that. Let's lock in the next steps.",
@@ -49638,9 +49638,25 @@ router2.get("/report/:id", (req, res) => {
   }
   res.json(report);
 });
-router2.get("/download-pdf/:id", (req, res) => {
+router2.get("/download-pdf/:id", async (req, res) => {
   const { id } = req.params;
   const pdfPath = path.join(REPORTS_DIR, `${id}.pdf`);
+  if (id === "demo" && !fs.existsSync(pdfPath)) {
+    const demoJsonPath = path.join(REPORTS_DIR, "demo.json");
+    try {
+      fs.writeFileSync(demoJsonPath, JSON.stringify(DEMO_REPORT, null, 2));
+      const { stdout } = await runPython("generate_pdf.py", [demoJsonPath, pdfPath]);
+      const result = JSON.parse(stdout.trim());
+      if (result.error) {
+        res.status(500).json({ error: `PDF generation failed: ${result.error}` });
+        return;
+      }
+    } catch (err) {
+      logger.error({ err }, "Demo PDF generation failed");
+      res.status(500).json({ error: "Could not generate demo PDF. Check server logs." });
+      return;
+    }
+  }
   if (!fs.existsSync(pdfPath)) {
     res.status(404).json({ error: "PDF not found. Run analysis first." });
     return;

@@ -336,7 +336,7 @@ const DEMO_REPORT = {
   date: "2025-03-14T10:22:00.000Z",
   filename: "sales-call-acme-corp-Q1.mp3",
   hasDiarization: true,
-  pdfAvailable: false,
+  pdfAvailable: true,
   transcript: {
     id: "demo",
     fullText:
@@ -503,13 +503,35 @@ router.get("/report/:id", (req, res) => {
 });
 
 // GET /api/download-pdf/:id
-router.get("/download-pdf/:id", (req, res) => {
+// Special case: "demo" generates the PDF on-demand from the in-memory demo
+// report, caching it in REPORTS_DIR so subsequent downloads are instant.
+router.get("/download-pdf/:id", async (req, res) => {
   const { id } = req.params;
   const pdfPath = path.join(REPORTS_DIR, `${id}.pdf`);
+
+  if (id === "demo" && !fs.existsSync(pdfPath)) {
+    // Write the demo report JSON so generate_pdf.py can read it
+    const demoJsonPath = path.join(REPORTS_DIR, "demo.json");
+    try {
+      fs.writeFileSync(demoJsonPath, JSON.stringify(DEMO_REPORT, null, 2));
+      const { stdout } = await runPython("generate_pdf.py", [demoJsonPath, pdfPath]);
+      const result = JSON.parse(stdout.trim());
+      if (result.error) {
+        res.status(500).json({ error: `PDF generation failed: ${result.error}` });
+        return;
+      }
+    } catch (err: any) {
+      logger.error({ err }, "Demo PDF generation failed");
+      res.status(500).json({ error: "Could not generate demo PDF. Check server logs." });
+      return;
+    }
+  }
+
   if (!fs.existsSync(pdfPath)) {
     res.status(404).json({ error: "PDF not found. Run analysis first." });
     return;
   }
+
   res.setHeader("Content-Type", "application/pdf");
   res.setHeader("Content-Disposition", `attachment; filename="report-${id}.pdf"`);
   fs.createReadStream(pdfPath).pipe(res as any);
