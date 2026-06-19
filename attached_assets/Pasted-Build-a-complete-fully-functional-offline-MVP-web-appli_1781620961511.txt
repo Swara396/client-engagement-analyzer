@@ -1,0 +1,631 @@
+Build a **complete, fully functional, offline MVP web application** called **Client Engagement Analyzer**.
+
+This is a university project and the objective is to create a working end-to-end system that analyzes client conversations from audio recordings and generates actionable engagement insights.
+
+## CRITICAL REQUIREMENTS
+
+* This is NOT a UI prototype.
+* Do NOT use placeholder data.
+* Do NOT generate mock reports.
+* Do NOT hardcode percentages.
+* Do NOT simulate transcripts.
+* Do NOT use any paid APIs or cloud services.
+* The entire application must run locally on a standard development machine.
+* Every result displayed in the frontend must originate from the uploaded or recorded audio.
+
+Generate all frontend and backend code, folder structure, dependencies, setup instructions, and documentation required to run the project locally.
+
+---
+
+# TECH STACK
+
+## Frontend
+
+Use:
+
+* Next.js (TypeScript)
+* Tailwind CSS
+* shadcn/ui
+* React Hook Form
+
+Design a modern SaaS dashboard with a premium enterprise look.
+
+---
+
+## Backend
+
+Use:
+
+* FastAPI (Python)
+
+Organize the backend into modular services.
+
+---
+
+## Local AI and Audio Processing
+
+Use ONLY free and offline libraries.
+
+### Speech-to-Text
+
+Use:
+
+* faster-whisper
+
+Requirements:
+
+* Run locally.
+* Use the "small" model by default.
+* Allow switching to "medium" through configuration.
+
+Return:
+
+* Full transcript
+* Timestamped transcript segments
+
+Do NOT use OpenAI Whisper API.
+
+---
+
+## Audio Analysis
+
+Use:
+
+* librosa
+* numpy
+* scipy
+
+Extract:
+
+* Audio duration
+* Energy features
+* Pitch variation
+* Speaking rate
+* Silence detection
+* Pause statistics
+
+---
+
+## PDF Generation
+
+Use:
+
+* ReportLab
+
+Generate downloadable PDF reports locally.
+
+Save generated reports in:
+
+```text
+/reports
+```
+
+---
+
+## File Storage
+
+Store all generated data locally:
+
+```text
+/uploads
+/transcripts
+/reports
+```
+
+No databases required for MVP.
+
+---
+
+# PROJECT STRUCTURE
+
+Generate the following structure:
+
+```text
+client-engagement-analyzer/
+│
+├── frontend/
+│
+├── backend/
+│   ├── routes/
+│   ├── services/
+│   │   ├── transcription/
+│   │   ├── analytics/
+│   │   ├── reporting/
+│   │   └── recommendations/
+│   ├── utils/
+│   └── main.py
+│
+├── uploads/
+├── transcripts/
+├── reports/
+├── README.md
+├── requirements.txt
+└── .env.example
+```
+
+Generate all files.
+
+---
+
+# HOMEPAGE
+
+Design a premium homepage.
+
+Headline:
+
+## Understand Your Clients Beyond Words.
+
+Subheadline:
+
+Transform conversations into actionable engagement insights using AI-powered voice analysis.
+
+Primary Button:
+
+### Upload Recording
+
+Secondary Button:
+
+### Record Live
+
+Include sections:
+
+* Features
+* How It Works
+* Sample Report Preview
+* Call to Action
+
+Use modern enterprise-grade UI.
+
+---
+
+# AUDIO INPUT
+
+Allow users to:
+
+## Upload Audio
+
+Supported formats:
+
+* MP3
+* WAV
+* M4A
+
+Maximum file size:
+
+100 MB
+
+Display:
+
+* File name
+* File size
+* Duration
+* Upload status
+
+---
+
+## Record Audio
+
+Implement browser recording using MediaRecorder API.
+
+Features:
+
+* Start Recording
+* Pause Recording
+* Resume Recording
+* Stop Recording
+* Playback Recording
+* Delete Recording
+
+Recorded audio should automatically proceed to analysis.
+
+---
+
+# BACKEND API ENDPOINTS
+
+Implement:
+
+```text
+POST /upload
+POST /analyze
+GET /transcript/{id}
+GET /report/{id}
+GET /download-pdf/{id}
+```
+
+All endpoints must be functional.
+
+---
+
+# TRANSCRIPTION
+
+Use faster-whisper locally.
+
+Generate:
+
+* Full transcript
+* Timestamped transcript segments
+
+Example:
+
+```text
+00:00–00:05
+Hello, how are you today?
+```
+
+Do NOT generate sample transcripts.
+
+Only use actual audio output.
+
+Save transcript JSON files locally.
+
+---
+
+# TRANSCRIPT VIEWER
+
+Frontend must include:
+
+* Search functionality
+* Timestamp display
+* Expand/collapse transcript
+* Download transcript button
+
+Highlight:
+
+* Questions
+* Filler words
+
+---
+
+# QUESTION DETECTION
+
+Detect actual questions from transcript.
+
+Identify:
+
+* Sentences ending with "?"
+* Interrogative phrases such as:
+
+  * what
+  * why
+  * when
+  * where
+  * who
+  * how
+  * can you
+  * could you
+  * would you
+
+Return:
+
+* Total questions asked
+* List of detected questions
+
+Display them in the dashboard.
+
+---
+
+# FILLER WORD DETECTION
+
+Detect:
+
+* um
+* uh
+* hmm
+* like
+* you know
+* actually
+* basically
+
+Return:
+
+* Total filler count
+* Filler frequency
+
+Highlight fillers inside transcript viewer.
+
+---
+
+# SPEAKING METRICS
+
+Calculate using transcript and audio:
+
+* Conversation duration
+* Total words spoken
+* Speaking rate (words per minute)
+* Questions asked
+* Total filler words
+* Average filler frequency
+
+Display all metrics.
+
+---
+
+# PAUSE DETECTION
+
+Use librosa to detect silence.
+
+Calculate:
+
+* Total pauses
+* Average pause duration
+* Longest pause
+
+Display pause analytics.
+
+---
+
+# CLIENT ENGAGEMENT INDICATORS
+
+Generate deterministic indicators using actual calculated values.
+
+Do NOT generate arbitrary percentages.
+
+---
+
+## Confidence Indicator
+
+Formula:
+
+30% Fluency Score
+
+30% Pause Consistency
+
+20% Speaking Stability
+
+20% Filler Reduction
+
+Return:
+
+* Numerical score
+* Low / Moderate / High classification
+* Explanation
+
+---
+
+## Engagement Indicator
+
+Formula:
+
+40% Question Frequency
+
+30% Speaking Activity
+
+30% Vocal Energy Consistency
+
+Return:
+
+* Score
+* Classification
+* Explanation
+
+---
+
+## Hesitation Indicator
+
+Formula:
+
+40% Filler Usage
+
+40% Long Pauses
+
+20% Self-Corrections
+
+Return:
+
+* Score
+* Classification
+* Explanation
+
+---
+
+## Curiosity Indicator
+
+Based on:
+
+* Number of questions
+* Clarification phrases
+
+Return:
+
+* Score
+* Classification
+* Explanation
+
+---
+
+## Attentiveness Indicator
+
+Based on:
+
+* Consistency of speech
+* Response continuity
+* Speaking engagement
+
+Return:
+
+* Score
+* Classification
+* Explanation
+
+---
+
+# EXECUTIVE SUMMARY
+
+DO NOT use external APIs.
+
+Generate rule-based summaries.
+
+Examples:
+
+If:
+
+High engagement
+
+Low hesitation
+
+Many questions
+
+Generate:
+
+"The participant demonstrated strong engagement and actively contributed throughout the discussion."
+
+If:
+
+High hesitation
+
+Long pauses
+
+Generate:
+
+"The conversation exhibited signs of uncertainty during key moments, suggesting opportunities for additional clarification."
+
+Generate:
+
+* Overall summary
+* Positive observations
+* Areas requiring attention
+
+---
+
+# RECOMMENDATIONS ENGINE
+
+Generate recommendations based on actual metrics.
+
+Examples:
+
+* Encourage open-ended discussions.
+* Address objections earlier.
+* Provide more clarification during complex topics.
+* Reinforce trust-building communication.
+
+Recommendations must originate from calculated indicators.
+
+---
+
+# PDF REPORT GENERATION
+
+Generate REAL downloadable PDF reports using ReportLab.
+
+Include:
+
+## Cover Page
+
+* Analysis ID
+* Date
+* Audio Duration
+
+---
+
+## Executive Summary
+
+---
+
+## Communication Metrics
+
+Display all calculated metrics.
+
+---
+
+## Client Engagement Indicators
+
+Include:
+
+* Confidence
+* Engagement
+* Hesitation
+* Curiosity
+* Attentiveness
+
+---
+
+## Questions Asked
+
+Display detected questions.
+
+---
+
+## Behavioral Insights
+
+Positive observations and concerns.
+
+---
+
+## Recommendations
+
+Actionable next steps.
+
+---
+
+## Transcript Summary
+
+Include a concise transcript overview.
+
+Save PDF files locally.
+
+Provide download functionality.
+
+---
+
+# RESULTS DASHBOARD
+
+Display actual outputs.
+
+Include:
+
+* Analysis ID
+* Date
+* Duration
+
+Cards for:
+
+* Confidence Indicator
+* Engagement Indicator
+* Hesitation Indicator
+* Curiosity Indicator
+* Attentiveness Indicator
+
+Display explanations below each card.
+
+Use modern charts and responsive layouts.
+
+---
+
+# ERROR HANDLING
+
+Handle gracefully:
+
+* Unsupported file types
+* Empty uploads
+* Corrupted audio
+* Whisper failures
+* PDF generation failures
+
+Display user-friendly error messages.
+
+---
+
+# README
+
+Generate complete documentation including:
+
+* Installation instructions
+* Python setup
+* Node.js setup
+* Frontend startup
+* Backend startup
+* Required dependencies
+* Folder explanations
+* Running locally
+* Troubleshooting guide
+
+---
+
+# FINAL REQUIREMENT
+
+Generate a **working offline MVP** for Client Engagement Analyzer that performs real analysis on uploaded or recorded audio using only free local libraries.
+
+Every transcript, metric, indicator, recommendation, and PDF report must be derived from actual audio input.
+
+Do not generate placeholders, fake analytics, mocked percentages, simulated reports, hardcoded transcripts, or incomplete integrations.
+
+The generated project should run locally after installing dependencies and should be suitable for demonstrating as a university project MVP.

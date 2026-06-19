@@ -1,0 +1,508 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: Client Engagement Analyzer API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: analysis
+    description: Audio analysis operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /upload:
+    post:
+      operationId: uploadAudio
+      tags: [analysis]
+      summary: Upload an audio file for analysis
+      responses:
+        "200":
+          description: Upload accepted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UploadResult"
+        "400":
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /analyze:
+    post:
+      operationId: analyzeAudio
+      tags: [analysis]
+      summary: Trigger analysis on an uploaded audio file (returns immediately, poll /status/:id)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AnalyzeInput"
+      responses:
+        "200":
+          description: Job queued
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobQueued"
+        "400":
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /status/{id}:
+    get:
+      operationId: getAnalysisStatus
+      tags: [analysis]
+      summary: Poll job status
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Job status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobStatus"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /transcript/{id}:
+    get:
+      operationId: getTranscript
+      tags: [analysis]
+      summary: Get transcript by analysis ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Transcript data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TranscriptData"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /report/{id}:
+    get:
+      operationId: getReport
+      tags: [analysis]
+      summary: Get full analysis report by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Full report
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AnalysisResult"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /download-pdf/{id}:
+    get:
+      operationId: downloadPdf
+      tags: [analysis]
+      summary: Download PDF report for an analysis
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: PDF file
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /analyses:
+    get:
+      operationId: listAnalyses
+      tags: [analysis]
+      summary: List all past analyses
+      responses:
+        "200":
+          description: List of analyses
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/AnalysisSummary"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error
+
+    JobQueued:
+      type: object
+      properties:
+        uploadId:
+          type: string
+        status:
+          type: string
+      required:
+        - uploadId
+        - status
+
+    JobStatus:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [pending, processing, done, error]
+        step:
+          type: string
+          nullable: true
+        error:
+          type: string
+        startedAt:
+          type: string
+      required:
+        - status
+        - startedAt
+
+    AnalyzeInput:
+      type: object
+      properties:
+        uploadId:
+          type: string
+      required:
+        - uploadId
+
+    UploadResult:
+      type: object
+      properties:
+        uploadId:
+          type: string
+        filename:
+          type: string
+        size:
+          type: integer
+        mimeType:
+          type: string
+      required:
+        - uploadId
+        - filename
+        - size
+        - mimeType
+
+    TranscriptSegment:
+      type: object
+      properties:
+        start:
+          type: number
+        end:
+          type: number
+        text:
+          type: string
+        isQuestion:
+          type: boolean
+        fillerWords:
+          type: array
+          items:
+            type: string
+        speaker:
+          type: string
+          description: Speaker ID (e.g. SPEAKER_00) — present when diarization ran
+      required:
+        - start
+        - end
+        - text
+        - isQuestion
+        - fillerWords
+
+    TranscriptData:
+      type: object
+      properties:
+        id:
+          type: string
+        fullText:
+          type: string
+        segments:
+          type: array
+          items:
+            $ref: "#/components/schemas/TranscriptSegment"
+        questions:
+          type: array
+          items:
+            type: string
+        fillerWords:
+          type: array
+          items:
+            type: string
+      required:
+        - id
+        - fullText
+        - segments
+        - questions
+        - fillerWords
+
+    SpeakingMetrics:
+      type: object
+      properties:
+        durationSeconds:
+          type: number
+        totalWords:
+          type: integer
+        speakingRateWpm:
+          type: number
+        questionsCount:
+          type: integer
+        fillerWordCount:
+          type: integer
+        fillerFrequencyPerMinute:
+          type: number
+        pauseCount:
+          type: integer
+        avgPauseDurationSeconds:
+          type: number
+        longestPauseDurationSeconds:
+          type: number
+        energyMean:
+          type: number
+        energyStd:
+          type: number
+        pitchMean:
+          type: number
+        pitchStd:
+          type: number
+      required:
+        - durationSeconds
+        - totalWords
+        - speakingRateWpm
+        - questionsCount
+        - fillerWordCount
+        - fillerFrequencyPerMinute
+        - pauseCount
+        - avgPauseDurationSeconds
+        - longestPauseDurationSeconds
+        - energyMean
+        - energyStd
+        - pitchMean
+        - pitchStd
+
+    EngagementIndicator:
+      type: object
+      properties:
+        score:
+          type: number
+        classification:
+          type: string
+          enum: [Low, Moderate, High]
+        explanation:
+          type: string
+      required:
+        - score
+        - classification
+        - explanation
+
+    EngagementIndicators:
+      type: object
+      properties:
+        confidence:
+          $ref: "#/components/schemas/EngagementIndicator"
+        engagement:
+          $ref: "#/components/schemas/EngagementIndicator"
+        hesitation:
+          $ref: "#/components/schemas/EngagementIndicator"
+        curiosity:
+          $ref: "#/components/schemas/EngagementIndicator"
+        attentiveness:
+          $ref: "#/components/schemas/EngagementIndicator"
+      required:
+        - confidence
+        - engagement
+        - hesitation
+        - curiosity
+        - attentiveness
+
+    ExecutiveSummary:
+      type: object
+      properties:
+        overall:
+          type: string
+        positiveObservations:
+          type: array
+          items:
+            type: string
+        areasOfAttention:
+          type: array
+          items:
+            type: string
+        recommendations:
+          type: array
+          items:
+            type: string
+      required:
+        - overall
+        - positiveObservations
+        - areasOfAttention
+        - recommendations
+
+    SpeakerMetrics:
+      type: object
+      description: Per-speaker communication metrics (present when diarization ran)
+      properties:
+        label:
+          type: string
+          description: Human-readable label e.g. "Speaker 1"
+        speakingTimeSeconds:
+          type: number
+        participationPct:
+          type: number
+        wordCount:
+          type: integer
+        speakingRateWpm:
+          type: number
+        questionsCount:
+          type: integer
+        fillerWordCount:
+          type: integer
+        fillerFrequencyPerMinute:
+          type: number
+        indicators:
+          $ref: "#/components/schemas/EngagementIndicators"
+        summary:
+          $ref: "#/components/schemas/ExecutiveSummary"
+      required:
+        - label
+        - speakingTimeSeconds
+        - participationPct
+        - wordCount
+        - speakingRateWpm
+        - questionsCount
+        - fillerWordCount
+        - fillerFrequencyPerMinute
+
+    AnalysisResult:
+      type: object
+      properties:
+        id:
+          type: string
+        date:
+          type: string
+        filename:
+          type: string
+        hasDiarization:
+          type: boolean
+        transcript:
+          $ref: "#/components/schemas/TranscriptData"
+        metrics:
+          $ref: "#/components/schemas/SpeakingMetrics"
+        indicators:
+          $ref: "#/components/schemas/EngagementIndicators"
+        summary:
+          $ref: "#/components/schemas/ExecutiveSummary"
+        speakers:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/SpeakerMetrics"
+          description: Map of speaker ID to speaker profile (present when diarization ran)
+        pdfAvailable:
+          type: boolean
+      required:
+        - id
+        - date
+        - filename
+        - transcript
+        - metrics
+        - indicators
+        - summary
+        - pdfAvailable
+
+    AnalysisSummary:
+      type: object
+      properties:
+        id:
+          type: string
+        date:
+          type: string
+        filename:
+          type: string
+        durationSeconds:
+          type: number
+        overallEngagement:
+          type: string
+        pdfAvailable:
+          type: boolean
+        hasDiarization:
+          type: boolean
+        speakerCount:
+          type: integer
+      required:
+        - id
+        - date
+        - filename
+        - durationSeconds
+        - overallEngagement
+        - pdfAvailable

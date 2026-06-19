@@ -1,0 +1,81 @@
+# ============================================================
+# Dependencies
+# ============================================================
+node_modules/
+
+# ============================================================
+# Build output & compiled files
+# ============================================================
+dist/
+build/
+*.tsbuildinfo
+*.d.ts.map
+
+# ============================================================
+# TypeScript declaration maps (generated, not source)
+# ============================================================
+lib/api-client-react/dist/
+lib/api-zod/dist/
+lib/db/dist/
+artifacts/api-server/dist/
+
+# ============================================================
+# Replit internal config (not needed in Git)
+# ============================================================
+.replit-artifact/
+
+# ============================================================
+# Lock files (pick ONE to keep — remove the one you don't use)
+# Keep pnpm-lock.yaml if your team uses pnpm, else delete this line
+# ============================================================
+# pnpm-lock.yaml   ← uncomment to exclude lock file (not recommended)
+package-lock.json
+yarn.lock
+
+# ============================================================
+# Runtime data — uploaded audio files
+# ============================================================
+artifacts/api-server/uploads/
+artifacts/api-server/transcripts/
+artifacts/api-server/reports/
+
+# ============================================================
+# Generated code (auto-created by orval from openapi.yaml)
+# Keep openapi.yaml (source of truth), ignore generated output
+# ============================================================
+lib/api-client-react/src/generated/
+lib/api-zod/src/generated/
+
+# ============================================================
+# Auto-generated mockup component list
+# ============================================================
+artifacts/mockup-sandbox/src/.generated/
+
+# ============================================================
+# Attached assets / prompt text files (not source code)
+# ============================================================
+attached_assets/
+
+# ============================================================
+# Environment variables
+# ============================================================
+.env
+.env.local
+.env.*.local
+
+# ============================================================
+# OS & editor junk
+# ============================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/

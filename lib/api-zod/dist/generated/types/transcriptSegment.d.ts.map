@@ -1,0 +1,1 @@
+{"version":3,"file":"transcriptSegment.d.ts","sourceRoot":"","sources":["../../../src/generated/types/transcriptSegment.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AAEH,MAAM,WAAW,iBAAiB;IAChC,KAAK,EAAE,MAAM,CAAC;IACd,GAAG,EAAE,MAAM,CAAC;IACZ,IAAI,EAAE,MAAM,CAAC;IACb,UAAU,EAAE,OAAO,CAAC;IACpB,WAAW,EAAE,MAAM,EAAE,CAAC;IACtB,kEAAkE;IAClE,OAAO,CAAC,EAAE,MAAM,CAAC;CAClB"}

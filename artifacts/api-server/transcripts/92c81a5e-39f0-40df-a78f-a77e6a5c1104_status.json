@@ -1,0 +1,6 @@
+{
+  "status": "error",
+  "step": null,
+  "error": "Command failed: python3 /home/runner/workspace/artifacts/api-server/python/analyze_audio.py /home/runner/workspace/artifacts/api-server/uploads/92c81a5e-39f0-40df-a78f-a77e6a5c1104.mp3 /home/runner/workspace/artifacts/api-server/transcripts/92c81a5e-39f0-40df-a78f-a77e6a5c1104.json /home/runner/workspace/artifacts/api-server/transcripts/92c81a5e-39f0-40df-a78f-a77e6a5c1104_metrics.json\n",
+  "startedAt": "2026-06-18T06:43:10.064Z"
+}

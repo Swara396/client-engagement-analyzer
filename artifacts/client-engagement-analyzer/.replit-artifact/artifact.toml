@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Client Engagement Analyzer"
+version = "1.0.0"
+id = "artifacts/client-engagement-analyzer"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19972
+
+[services.development]
+run = "pnpm --filter @workspace/client-engagement-analyzer run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/client-engagement-analyzer", "run", "build" ]
+publicDir = "artifacts/client-engagement-analyzer/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19972"
+BASE_PATH = "/"
