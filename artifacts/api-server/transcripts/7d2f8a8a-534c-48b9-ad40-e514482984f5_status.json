@@ -1,6 +1,0 @@
-{
-  "status": "error",
-  "step": null,
-  "error": "Command failed: python3 /home/runner/workspace/artifacts/api-server/python/transcribe.py /home/runner/workspace/artifacts/api-server/uploads/7d2f8a8a-534c-48b9-ad40-e514482984f5.mp3 /home/runner/workspace/artifacts/api-server/transcripts/7d2f8a8a-534c-48b9-ad40-e514482984f5.json small\n",
-  "startedAt": "2026-06-17T18:01:16.264Z"
-}
