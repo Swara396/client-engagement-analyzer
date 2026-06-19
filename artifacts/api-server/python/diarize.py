@@ -2,6 +2,7 @@
 """
 Speaker diarization using pyannote.audio.
 Merges speaker assignments into the existing Whisper transcript segments.
+Automatically uses CUDA (GPU) when available, falls back to CPU gracefully.
 Usage: python diarize.py <audio_path> <transcript_json_path> <output_diarization_path>
 
 Requires:
@@ -43,6 +44,35 @@ def assign_speakers(transcript_segments, dia_segments):
     return transcript_segments
 
 
+def resolve_device():
+    """
+    Return the best available torch device for diarization.
+    - CUDA GPU present  → 'cuda'  (fastest; pyannote runs in seconds)
+    - No GPU            → 'cpu'   (slow but correct; no crash)
+    """
+    try:
+        import torch
+        if torch.cuda.is_available():
+            print(
+                json.dumps({"info": "CUDA GPU detected — diarization will run on GPU."}),
+                file=sys.stderr,
+            )
+            return torch.device("cuda")
+        else:
+            print(
+                json.dumps({"info": "No CUDA GPU — diarization will run on CPU (may be slow)."}),
+                file=sys.stderr,
+            )
+            return torch.device("cpu")
+    except ImportError:
+        print(
+            json.dumps({"info": "torch not importable — defaulting to CPU."}),
+            file=sys.stderr,
+        )
+        import torch
+        return torch.device("cpu")
+
+
 def diarize(audio_path: str, transcript_path: str, output_path: str):
     hf_token = os.environ.get("HUGGINGFACE_TOKEN", "").strip()
     if not hf_token:
@@ -67,13 +97,14 @@ def diarize(audio_path: str, transcript_path: str, output_path: str):
     with open(transcript_path) as f:
         transcript = json.load(f)
 
+    device = resolve_device()
+
     try:
         pipeline = Pipeline.from_pretrained(
             "pyannote/speaker-diarization-3.1",
             use_auth_token=hf_token,
         )
-        # Force CPU — no CUDA expected in Replit
-        pipeline.to(torch.device("cpu"))
+        pipeline.to(device)
         diarization = pipeline(audio_path)
     except Exception as e:
         err_str = str(e)

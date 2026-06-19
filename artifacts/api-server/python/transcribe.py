@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
 Transcription service using faster-whisper (local, offline).
-Optimised for speed: beam_size=1, VAD filter on, int8 compute.
+Automatically uses CUDA (GPU) when available, falls back to CPU gracefully.
+- GPU: uses the caller-supplied model size (default "small") with float16
+- CPU: downgrades to "base" model + int8 quantisation for acceptable speed
 Usage: python transcribe.py <audio_file_path> <output_json_path> [model_size]
 """
 import sys
@@ -30,6 +32,55 @@ def detect_fillers(text: str) -> list:
     return found
 
 
+def resolve_device_and_model(requested_model: str):
+    """
+    Dynamically pick the best device and model size for this machine.
+
+    GPU (CUDA available):
+      - device      = "cuda"
+      - compute_type = "float16"  — full precision on the GPU tensor cores
+      - model_size  = caller-supplied (e.g. "small", "medium", "large-v3")
+
+    CPU (no CUDA / no GPU):
+      - device      = "cpu"
+      - compute_type = "int8"     — fastest CPU inference with negligible accuracy loss
+      - model_size  = "base"      — lightweight enough to finish in reasonable time
+        (overrides anything larger; "tiny" is also accepted if caller set it explicitly)
+    """
+    try:
+        import torch
+        cuda_available = torch.cuda.is_available()
+    except ImportError:
+        cuda_available = False
+
+    if cuda_available:
+        device = "cuda"
+        compute_type = "float16"
+        model_size = requested_model  # honour caller's choice on GPU
+        print(
+            json.dumps({
+                "info": f"CUDA GPU detected — using device=cuda, model={model_size}, compute=float16"
+            }),
+            file=sys.stderr,
+        )
+    else:
+        device = "cpu"
+        compute_type = "int8"
+        # On CPU, cap at "base" unless the caller explicitly asked for "tiny"
+        model_size = requested_model if requested_model == "tiny" else "base"
+        print(
+            json.dumps({
+                "info": (
+                    f"No CUDA GPU found — using device=cpu, model={model_size}, compute=int8. "
+                    f"(Requested model '{requested_model}' downgraded for CPU speed.)"
+                )
+            }),
+            file=sys.stderr,
+        )
+
+    return device, compute_type, model_size
+
+
 def transcribe(audio_path: str, output_path: str, model_size: str = "small"):
     try:
         from faster_whisper import WhisperModel
@@ -41,12 +92,13 @@ def transcribe(audio_path: str, output_path: str, model_size: str = "small"):
         print(json.dumps({"error": f"Audio file not found: {audio_path}"}))
         sys.exit(1)
 
-    # int8 + cpu — fastest local inference; beam_size=1 gives ~2-3x speedup
-    # with minimal accuracy loss for engagement analysis purposes.
-    model = WhisperModel(model_size, device="cpu", compute_type="int8")
+    device, compute_type, effective_model = resolve_device_and_model(model_size)
 
-    # vad_filter=True skips silent segments — huge win for 19-min files
-    # condition_on_previous_text=False avoids hallucination drift on long audio
+    model = WhisperModel(effective_model, device=device, compute_type=compute_type)
+
+    # vad_filter=True skips silent segments — huge win for long files.
+    # beam_size=1 gives ~2-3x speedup with minimal accuracy loss.
+    # condition_on_previous_text=False avoids hallucination drift on long audio.
     segments_gen, info = model.transcribe(
         audio_path,
         beam_size=1,
