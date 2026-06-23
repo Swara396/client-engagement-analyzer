@@ -92,6 +92,7 @@ def transcribe(audio_path: str, output_path: str, model_size: str = "small"):
         print(json.dumps({"error": f"Audio file not found: {audio_path}"}))
         sys.exit(1)
 
+    model_size = "tiny"
     device, compute_type, effective_model = resolve_device_and_model(model_size)
 
     model = WhisperModel(effective_model, device=device, compute_type=compute_type)

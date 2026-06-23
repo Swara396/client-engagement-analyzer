@@ -71,25 +71,17 @@ def resolve_device():
         )
         import torch
         return torch.device("cpu")
-
-
 def diarize(audio_path: str, transcript_path: str, output_path: str):
-    hf_token = os.environ.get("HUGGINGFACE_TOKEN", "").strip()
+    hf_token = "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"
     if not hf_token:
         print(json.dumps({"error": "HUGGINGFACE_TOKEN is not set. Add it in Replit Secrets."}))
         sys.exit(1)
 
-    try:
-        from pyannote.audio import Pipeline
-        import torch
-    except ImportError:
-        print(json.dumps({"error": "pyannote.audio not installed. Run: pip install pyannote.audio torch"}))
-        sys.exit(1)
-
+    from pyannote.audio import Pipeline
+    import torch
     if not os.path.exists(audio_path):
         print(json.dumps({"error": f"Audio file not found: {audio_path}"}))
         sys.exit(1)
-
     if not os.path.exists(transcript_path):
         print(json.dumps({"error": f"Transcript not found: {transcript_path}"}))
         sys.exit(1)
@@ -98,14 +90,30 @@ def diarize(audio_path: str, transcript_path: str, output_path: str):
         transcript = json.load(f)
 
     device = resolve_device()
-
     try:
+        import soundfile as sf
+        import torchaudio
+        
+        # Bypass torchcodec backend entirely
+        torchaudio.set_audio_backend("soundfile")
+        
         pipeline = Pipeline.from_pretrained(
             "pyannote/speaker-diarization-3.1",
-            use_auth_token=hf_token,
+            token=hf_token,
         )
         pipeline.to(device)
-        diarization = pipeline(audio_path)
+        
+        # Read the file cleanly as an array matrix
+        waveform, sample_rate = sf.read(audio_path)
+        
+        # Ensure correct tensor format for multi-channel or mono audio
+        if len(waveform.shape) > 1:
+            waveform = torch.FloatTensor(waveform).T
+        else:
+            waveform = torch.FloatTensor(waveform).unsqueeze(0)
+            
+        # Run diarization in memory
+        diarization = pipeline({"waveform": waveform, "sample_rate": sample_rate})
     except Exception as e:
         err_str = str(e)
         if "401" in err_str or "Unauthorized" in err_str or "gated" in err_str.lower():

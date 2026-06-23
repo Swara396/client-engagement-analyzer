@@ -1,0 +1,1168 @@
+
+> @workspace/api-server@0.0.0 dev /home/runner/workspace/artifacts/api-server
+> export NODE_ENV=development && pnpm run build && pnpm run start
+
+
+> @workspace/api-server@0.0.0 build /home/runner/workspace/artifacts/api-server
+> node ./build.mjs
+
+
+  [37mdist/[0m[1mindex.mjs[0m                       [33m1.8mb ⚠️[0m
+  [37mdist/[0m[1mpino-worker.mjs[0m               [36m153.4kb[0m
+  [37mdist/[0m[1mpino-file.mjs[0m                 [36m142.1kb[0m
+  [37mdist/[0m[1mpino-pretty.mjs[0m               [36m114.6kb[0m
+  [37mdist/[0m[1mthread-stream-worker.mjs[0m        [36m7.3kb[0m
+  [37mdist/[0m[1mindex.mjs.map[0m                   [36m2.9mb[0m
+  [37mdist/[0m[1mpino-worker.mjs.map[0m           [36m256.9kb[0m
+  [37mdist/[0m[1mpino-file.mjs.map[0m             [36m229.0kb[0m
+  [37mdist/[0m[1mpino-pretty.mjs.map[0m           [36m204.0kb[0m
+  [37mdist/[0m[1mthread-stream-worker.mjs.map[0m   [36m12.0kb[0m
+
+⚡ [32mDone in 514ms[0m
+
+> @workspace/api-server@0.0.0 start /home/runner/workspace/artifacts/api-server
+> node --enable-source-maps ./dist/index.mjs
+
+[13:14:15.460] [32mINFO[39m (361): [36mServer listening[39m
+    [35mport[39m: 8080
+[13:16:39.123] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 1,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 5
+[13:17:45.050] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 2,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:18:32.052] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 3,
+      "method": "GET",
+      "url": "/api/download-pdf/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 3
+[13:18:33.021] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 4,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:19:08.318] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 5,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:19:59.288] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 6,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:28:20.029] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 7,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[13:28:35.503] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 8,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:29:05.470] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 9,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:31:04.350] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 10,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:32:40.988] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 11,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[13:32:55.120] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 12,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:33:02.109] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 13,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:42:02.550] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 14,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:58:32.446] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 15,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[13:59:27.854] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 16,
+      "method": "GET",
+      "url": "/api/report/demo"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[13:59:56.444] [32mINFO[39m (361): [36mFile uploaded[39m
+    [35mreq[39m: {
+      "id": 17,
+      "method": "POST",
+      "url": "/api/upload"
+    }
+    [35muploadId[39m: "cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    [35mfilename[39m: "Product.mp3"
+    [35msize[39m: 61455810
+[13:59:56.445] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 17,
+      "method": "POST",
+      "url": "/api/upload"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 13311
+[13:59:56.578] [32mINFO[39m (361): [36mQueuing analysis pipeline[39m
+    [35mreq[39m: {
+      "id": 18,
+      "method": "POST",
+      "url": "/api/analyze"
+    }
+    [35muploadId[39m: "cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    [35mhasDiarization[39m: false
+[13:59:56.579] [32mINFO[39m (361): [36mStarting transcription[39m
+    [35muploadId[39m: "cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+[13:59:56.845] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 18,
+      "method": "POST",
+      "url": "/api/analyze"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 274
+[14:00:00.046] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 19,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:00:02.954] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 20,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:05.948] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 21,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:08.961] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 22,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:11.959] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 23,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:00:14.952] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 24,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:17.954] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 25,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:00:20.959] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 26,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:23.952] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 27,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:27.907] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 28,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:00:30.907] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 29,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:00:33.900] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 30,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:35.955] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 31,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:38.955] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 32,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:00:41.953] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 33,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:44.979] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 34,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:00:48.908] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 35,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:00:51.898] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 36,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:00:54.934] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 37,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 6
+[14:00:57.917] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 38,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:00:59.958] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 39,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:01:02.961] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 40,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:01:05.955] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 41,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:01:08.968] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 42,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:01:11.957] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 43,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:01:14.963] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 44,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:01:17.959] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 45,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:01:20.959] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 46,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:01:23.954] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 47,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:01:26.959] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 48,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:01:29.957] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 49,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:01:32.970] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 50,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 4
+[14:01:35.953] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 51,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:01:38.955] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 52,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:01:41.966] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 53,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:01:44.964] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 54,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:01:47.963] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 55,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:01:50.963] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 56,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:01:53.965] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 57,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:01:56.958] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 58,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:01:59.963] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 59,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:02:02.952] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 60,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:02:06.027] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 61,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 48
+[14:02:08.966] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 62,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:02:11.954] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 63,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:02:14.967] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 64,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:02:17.962] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 65,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:02:21.036] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 66,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:02:23.968] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 67,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:02:26.960] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 68,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:02:29.962] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 69,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 4
+[14:02:32.964] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 70,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:02:35.962] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 71,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:02:38.962] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 72,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:02:41.960] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 73,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:02:44.966] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 74,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:02:47.958] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 75,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:02:50.965] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 76,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:02:53.967] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 77,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:02:56.969] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 78,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:02:59.963] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 79,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:02.957] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 80,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:03:05.970] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 81,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:08.976] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 82,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 6
+[14:03:11.975] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 83,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:03:14.971] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 84,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:03:19.619] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 85,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:03:20.962] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 86,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:23.972] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 87,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:03:26.993] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 88,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:03:30.921] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 89,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 6
+[14:03:33.916] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 90,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:35.968] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 91,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:03:39.906] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 92,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:42.920] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 93,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:45.912] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 94,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:48.903] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 95,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:51.125] [33mWARN[39m (361): [36mTranscription stderr[39m
+    [35mstderr[39m: "{\"info\": \"No CUDA GPU found \u2014 using device=cpu, model=base, compute=int8. (Requested model 'small' downgraded for CPU speed.)\"}\nWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"
+[14:03:51.125] [32mINFO[39m (361): [36mHUGGINGFACE_TOKEN not set — skipping diarization[39m
+    [35muploadId[39m: "cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+[14:03:51.126] [32mINFO[39m (361): [36mStarting audio analysis[39m
+    [35muploadId[39m: "cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+[14:03:51.928] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 96,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 7
+[14:03:54.903] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 97,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:57.909] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 98,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:04:00.903] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 99,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:04:03.913] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 100,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 9
+[14:04:06.903] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 101,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:04:09.909] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 102,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:12.912] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 103,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:15.917] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 104,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 5
+[14:04:18.916] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 105,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:04:19.707] [32mINFO[39m (361): [36mGenerating engagement indicators[39m
+    [35muploadId[39m: "cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+[14:04:19.952] [32mINFO[39m (361): [36mGenerating PDF report[39m
+    [35muploadId[39m: "cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+[14:04:20.853] [32mINFO[39m (361): [36mAnalysis complete[39m
+    [35muploadId[39m: "cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+[14:04:21.902] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 106,
+      "method": "GET",
+      "url": "/api/status/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2
+[14:04:23.032] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 107,
+      "method": "GET",
+      "url": "/api/report/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 10
+[14:04:53.304] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 108,
+      "method": "GET",
+      "url": "/api/report/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 4
+[14:06:27.457] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 109,
+      "method": "GET",
+      "url": "/api/report/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 8
+[14:08:25.340] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 110,
+      "method": "GET",
+      "url": "/api/report/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 4
+[14:11:49.644] [32mINFO[39m (361): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 111,
+      "method": "GET",
+      "url": "/api/report/cacc7bd8-737d-4582-aa33-9cb3f7bbeb20"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 4

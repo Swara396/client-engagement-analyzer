@@ -80,7 +80,7 @@ async function runPython(
   args: string[],
   extraEnv: Record<string, string> = {}
 ): Promise<{ stdout: string; stderr: string }> {
-  const pythonBin = process.env.PYTHON_BIN || "python3";
+  const pythonBin = process.env.PYTHON_BIN || "python";
   const scriptPath = path.join(PYTHON_DIR, script);
   return execFileAsync(pythonBin, [scriptPath, ...args], {
     timeout: 0,

@@ -1,0 +1,6 @@
+{
+  "status": "error",
+  "step": null,
+  "error": "spawn python3 ENOENT",
+  "startedAt": "2026-06-20T16:28:08.590Z"
+}

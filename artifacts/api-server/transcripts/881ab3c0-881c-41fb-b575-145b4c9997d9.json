@@ -1,0 +1,363 @@
+{
+  "fullText": "Hi, good morning sir. This is so much calling from HDFC Bank Limited. Am I speaking with Mr. Steve? Hello. Am I speaking with Mr. Steve? Yeah. Yeah, it is me. So sir, is this convenient time to speak to you for a few minutes? I mean, sure. Go ahead. Yeah. Mr. Steve, CNC had shown interest by visiting our website. HDFC Bank has a pre-avort personal loan, offer of rupees 10, like ready for your personal right? Okay. And so the loan amount gets credited directly to your account in just 10 seconds through the express link which I share with you. Right. I mean I've seen similar things from other banks too. It's nothing new really. So this is the specific and the pre-approo for your based on your banking profile. Not any general awful. Which you have gone through or came across from the markets. Hmm. Okay. I hear you. Do you have any specific concerns or questions I can help you with? Not really. I mean, I am not in any urgent need of a loan right now. So I do understand so. Zero coal at zero documentation and fully people less. I'm digital. No has a lot of. That is fine. I suppose. Most banks are doing that these days anyway. Sir, on top of that, EMI is approximately rupees 2, 169. And the 10 years of late 84 months for retirement. Very much flexible. possible. Yeah, I would need to sit down and calculate whether that works for me. I cannot just say yes on a call. The word is said. Also to let you know, this is a limited period of it. It may not be a little after certain duration of time. If it expires it expires, I do not like making financial decisions under pressure. I would really be happy to come to you, office, personally, and walk you through everything. If in case that is needed, no commitment needed. I mean, I am fairly busy this week. I do not know if that is necessary right now. That absolutely works. Even, early next week, just for 15 minutes, but time that sold soon would be for the false as a... Maybe, I will have to check my schedule. I cannot confirm anything right now. So, is there anything I can do to make this a ZF or you to consider? Look, you seem like a decent guy, but I am just not in the right head space for this today. send me some information and I will go through it when I get a chance. Of course I'll do that. Sending all the details to your registered number right away. Thank you so much for your time. Have a great day. Sure. Thanks for calling. Bye.",
+  "segments": [
+    {
+      "start": 0.78,
+      "end": 5.78,
+      "text": "Hi, good morning sir. This is so much calling from HDFC Bank Limited. Am I speaking with Mr. Steve?",
+      "isQuestion": true,
+      "fillerWords": []
+    },
+    {
+      "start": 5.78,
+      "end": 9.36,
+      "text": "Hello. Am I speaking with Mr. Steve?",
+      "isQuestion": true,
+      "fillerWords": []
+    },
+    {
+      "start": 9.36,
+      "end": 15.46,
+      "text": "Yeah. Yeah, it is me. So sir, is this convenient time to speak to you for a few minutes?",
+      "isQuestion": true,
+      "fillerWords": []
+    },
+    {
+      "start": 15.46,
+      "end": 21.46,
+      "text": "I mean, sure. Go ahead. Yeah. Mr. Steve, CNC had shown interest by visiting our website.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 21.46,
+      "end": 26.46,
+      "text": "HDFC Bank has a pre-avort personal loan, offer of rupees 10, like ready for your personal right?",
+      "isQuestion": true,
+      "fillerWords": [
+        "like"
+      ]
+    },
+    {
+      "start": 26.46,
+      "end": 33.6,
+      "text": "Okay. And so the loan amount gets credited directly to your account in just 10 seconds through the express",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 33.6,
+      "end": 35.1,
+      "text": "link which I share with you.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 35.1,
+      "end": 39.54,
+      "text": "Right. I mean I've seen similar things from other banks too.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 39.54,
+      "end": 41.14,
+      "text": "It's nothing new really.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 41.14,
+      "end": 47.58,
+      "text": "So this is the specific and the pre-approo for your based on your banking profile. Not any general",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 47.58,
+      "end": 52.45,
+      "text": "awful. Which you have gone through or came across from the markets.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 52.45,
+      "end": 53.45,
+      "text": "Hmm.",
+      "isQuestion": false,
+      "fillerWords": [
+        "hmm"
+      ]
+    },
+    {
+      "start": 53.45,
+      "end": 54.45,
+      "text": "Okay.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 54.45,
+      "end": 56.34,
+      "text": "I hear you.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 56.34,
+      "end": 59.34,
+      "text": "Do you have any specific concerns or questions I can help you with?",
+      "isQuestion": true,
+      "fillerWords": []
+    },
+    {
+      "start": 59.34,
+      "end": 61.79,
+      "text": "Not really.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 61.79,
+      "end": 65.79,
+      "text": "I mean, I am not in any urgent need of a loan right now.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 65.79,
+      "end": 68.08,
+      "text": "So I do understand so.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 68.08,
+      "end": 71.08,
+      "text": "Zero coal at zero documentation and fully people less.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 71.08,
+      "end": 73.69,
+      "text": "I'm digital. No has a lot of.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 73.69,
+      "end": 75.69,
+      "text": "That is fine. I suppose.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 75.69,
+      "end": 78.69,
+      "text": "Most banks are doing that these days anyway.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 78.69,
+      "end": 82.69,
+      "text": "Sir, on top of that, EMI is approximately rupees 2, 169.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 82.69,
+      "end": 85.69,
+      "text": "And the 10 years of late 84 months for retirement.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 85.69,
+      "end": 86.69,
+      "text": "Very much flexible.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 86.69,
+      "end": 92.53,
+      "text": "possible. Yeah, I would need to sit down and calculate whether that works for me. I cannot",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 92.53,
+      "end": 93.89,
+      "text": "just say yes on a call.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 93.89,
+      "end": 98.98,
+      "text": "The word is said. Also to let you know, this is a limited period of it. It may not be a little",
+      "isQuestion": false,
+      "fillerWords": [
+        "you know"
+      ]
+    },
+    {
+      "start": 98.98,
+      "end": 104.97,
+      "text": "after certain duration of time. If it expires it expires, I do not like making financial decisions",
+      "isQuestion": false,
+      "fillerWords": [
+        "like"
+      ]
+    },
+    {
+      "start": 104.97,
+      "end": 109.95,
+      "text": "under pressure. I would really be happy to come to you, office, personally, and walk you through",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 109.95,
+      "end": 116.79,
+      "text": "everything. If in case that is needed, no commitment needed. I mean, I am fairly busy this week.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 116.79,
+      "end": 120.48,
+      "text": "I do not know if that is necessary right now.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 120.48,
+      "end": 121.48,
+      "text": "That absolutely works.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 121.48,
+      "end": 126.86,
+      "text": "Even, early next week, just for 15 minutes, but time that sold soon would be for the",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 126.86,
+      "end": 128.58,
+      "text": "false as a...",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 128.58,
+      "end": 132.1,
+      "text": "Maybe, I will have to check my schedule.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 132.1,
+      "end": 135.61,
+      "text": "I cannot confirm anything right now.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 135.61,
+      "end": 140.84,
+      "text": "So, is there anything I can do to make this a ZF or you to consider?",
+      "isQuestion": true,
+      "fillerWords": []
+    },
+    {
+      "start": 140.84,
+      "end": 146.24,
+      "text": "Look, you seem like a decent guy, but I am just not in the right head space for this today.",
+      "isQuestion": false,
+      "fillerWords": [
+        "like"
+      ]
+    },
+    {
+      "start": 146.24,
+      "end": 149.24,
+      "text": "send me some information and I will go through it when I get a chance.",
+      "isQuestion": true,
+      "fillerWords": []
+    },
+    {
+      "start": 149.24,
+      "end": 151.3,
+      "text": "Of course I'll do that.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 151.3,
+      "end": 153.3,
+      "text": "Sending all the details to your registered number right away.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 153.3,
+      "end": 155.3,
+      "text": "Thank you so much for your time.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 155.3,
+      "end": 156.3,
+      "text": "Have a great day.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 156.3,
+      "end": 157.5,
+      "text": "Sure.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 157.5,
+      "end": 158.5,
+      "text": "Thanks for calling.",
+      "isQuestion": false,
+      "fillerWords": []
+    },
+    {
+      "start": 158.5,
+      "end": 159.5,
+      "text": "Bye.",
+      "isQuestion": false,
+      "fillerWords": []
+    }
+  ],
+  "questions": [
+    "Hi, good morning sir. This is so much calling from HDFC Bank Limited. Am I speaking with Mr. Steve?",
+    "Hello. Am I speaking with Mr. Steve?",
+    "Yeah. Yeah, it is me. So sir, is this convenient time to speak to you for a few minutes?",
+    "HDFC Bank has a pre-avort personal loan, offer of rupees 10, like ready for your personal right?",
+    "Do you have any specific concerns or questions I can help you with?",
+    "So, is there anything I can do to make this a ZF or you to consider?",
+    "send me some information and I will go through it when I get a chance."
+  ],
+  "fillerWords": [
+    "like",
+    "hmm",
+    "you know",
+    "like",
+    "like"
+  ],
+  "wordCount": 466,
+  "detectedLanguage": "en",
+  "audioDurationSeconds": 159.36
+}
