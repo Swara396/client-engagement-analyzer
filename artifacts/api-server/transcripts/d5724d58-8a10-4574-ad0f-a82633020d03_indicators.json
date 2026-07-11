@@ -1,0 +1,43 @@
+{
+  "indicators": {
+    "confidence": {
+      "score": 67.1,
+      "classification": "High",
+      "explanation": "Strong fluency and consistent pacing with minimal pauses and few filler words."
+    },
+    "engagement": {
+      "score": 52.6,
+      "classification": "Moderate",
+      "explanation": "Moderate engagement with some active moments and reasonable conversational contribution."
+    },
+    "hesitation": {
+      "score": 41.4,
+      "classification": "Moderate",
+      "explanation": "Some hesitation detected, suggesting occasional uncertainty or pauses for thought."
+    },
+    "curiosity": {
+      "score": 59.0,
+      "classification": "Moderate",
+      "explanation": "Moderate curiosity \u2014 some questions and engagement with the subject matter."
+    },
+    "attentiveness": {
+      "score": 48.2,
+      "classification": "Moderate",
+      "explanation": "Generally engaged but with noticeable lapses in consistency."
+    }
+  },
+  "summary": {
+    "overall": "The conversation showed moderate engagement with notable strengths and some areas that could benefit from improvement.",
+    "positiveObservations": [
+      "Strong vocal confidence with minimal filler words and consistent pacing.",
+      "Optimal speaking rate (110\u2013150 WPM) for clear communication."
+    ],
+    "areasOfAttention": [
+      "Extended pauses (up to 72.2s) noted during the session."
+    ],
+    "recommendations": [
+      "Address complex topics earlier in the conversation to reduce moments of uncertainty.",
+      "Increase vocal variety and active participation to signal higher engagement."
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "durationSeconds": 159.36,
+  "totalWords": 466,
+  "speakingRateWpm": 175.45,
+  "questionsCount": 7,
+  "fillerWordCount": 5,
+  "fillerFrequencyPerMinute": 1.88,
+  "pauseCount": 28,
+  "avgPauseDurationSeconds": 0.86,
+  "longestPauseDurationSeconds": 1.57,
+  "energyMean": 0.059918,
+  "energyStd": 0.053179,
+  "pitchMean": 535.05,
+  "pitchStd": 819.88
+}

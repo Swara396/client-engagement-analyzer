@@ -1,0 +1,5583 @@
+{
+  "id": "b8e81bba-7346-4069-bdc0-402a4c1120fd",
+  "date": "2026-06-23T05:21:13.166Z",
+  "filename": "b8e81bba-7346-4069-bdc0-402a4c1120fd.mp3",
+  "hasDiarization": false,
+  "transcript": {
+    "id": "b8e81bba-7346-4069-bdc0-402a4c1120fd",
+    "fullText": "I can record. And we don't have a ton of items to get to. And I might be able to do one that might be fun if we have a little bit of time. So corporate events, I think I saw a little, I put this in Slack and I saw a little bit of kind of noise around it, which was good. The nutshell here is as we've kind of restructured and tried different things, the event support that we need isn't as nailed down as it needs to be. So the current tactic that we're going with is go-to-market team signs up and kind of of sponsors that event. So you supported the PMM, your campaign manager, does the campaigns for that event, et cetera, et cetera, et cetera. I don't see anyone in the, maybe there are comments in the issue. I don't see the header updated yet. I thought we had in Slack sort of farmed each one of them out. That's, so I guess the next, So it looks like Ty put in some folks. It looks like this looks good so that, let's see, needs support from GTM teams. So I guess the ask would be to work with your GTM teams. So let me ask, I saw some slack, I think an R slack, but did you all, were you all able to connect with like your GTM teams. Unslagged only and on the issue actually. Yeah, so I'm not in real time, but you know, source feedback. I got one person to respond so far. So it may end up Cindy being you and I just picking the one that we wanna do. And then they can back us up. If we don't get any more feedback. Yeah, do you all, does anybody have like a regular sink still are those all been canceled? Or is there a whole second? I'll have a rehearsal. Yeah, we're on like the two week cadence. OK. Yeah, GitHub's has been canceled after the enablement. Cool. So I'm just trying to catch up with the thread. So it looks like maybe a platform on reinvent CI-CD on Google next and get ups on kube con. Does that sound right? Yeah. Yeah. That's where we were last I heard. Cool. So then I think we can help the core prevents team. They do a lot of cat hurting and keep on tracking people down. So I think if this team can take the mission to try to help I'll track that down. So if you get the commitment specifically from your campaign managers, hey, like we're signing up for a coupon, can you comment on the issue that, yes, I can commit to this, et cetera, et cetera, et cetera, so that just so that they can get that event support. But that looks good and I appreciate thanks for the link to SOMI on the rolls. Product announcements. So I appreciate Brian for adding this. I probably should edit it, but. I had two questions about that one. One is over what timeframe are we looking at? So in theory, this could be the same as the GILAB 14 lunch where we're saying basically since 13.0, what kind of big improvements have we made? I'm not totally sure of all of the kind of the interplay here, but I think this is kind of the general gist of this assignment is okay, we have commit coming up. We have some amount of like we have a stage, you know, a metaphorical stage to say something into the world and we'll get some amount of press attention because we're having an event, right? What kind of announcements do we make? At GitLab, it's really, really tough to make product announcements because our entire roadmap is completely public. Yadda, yadda, yadda. So the thought here is to, but also because our entire roadmap is completely public and because we shift these tiny little MVCs, a new feature will come out, but it'll be not really usable. So it takes a while. So if you look back over the past year and say, okay, like what started in the last year but now is really like a full-fledged feature, what would be coming out of beta? Like if we were any other company, when we started a beta program in this last year, what would be announcing is GA at commit? That's kind of my thought on it. I see a couple of head now. So what do you think, Sydney? Yeah, I think I was inclined to group some things to say like vulnerability management because there were tiny little MVCs all the way along. But if you look at over the course of the year, we went from this to this, it makes more sense to me to highlight that than any individual little thing. And then the other point was, we just had 14.0. Can we just, can we reuse some of those things and plug them in here? Absolutely. Yeah. Yeah, and vulnerability management was one of the, you know, the features out of we looked at 14.0. So I think, yeah, this is like, let's take the stuff from 14.0. And then maybe add a few more so that we can hit kind of different areas of press or give our PR team. This is kind of like input into our PR team to give them fodder to go out with. And are we trying to hit three per stage? Yeah, ideally there's just three, you know, three at a time per stage. And then I think y'all made some good notes that okay, we need to add manage. So I see manage in here that's excellent. And integrations, we don't, well actually we have some pretty exciting integrations. So we have, the Jira stuff is pretty good. There's a couple of things in integrations with VS code that could be notable. But can I show what I did for SCN just to get some general feedback on it? And if someone hasn't done it, maybe that'll also kick. I was going in simplest direction here, which was thinking, you know, a lot of, and then I called them key iterations, the sort of specific things. So I listed a few specific things, like three or four per each as key iterations, but I called them something overall. So we would have like one thing to call them. There are several key iterations aligned with Giddyly Cluster, several that rolled up to a research-based user experience. And I was thinking like, I was shy on calling out UX as a bucket, except that actually that's super typical. Like Windows 11 or anybody who's rolling stuff out, they almost always have UX as one of their three things. And then they mentioned a longer list of stuff that aligns to that. So, I, you know, forgave myself for doing something at first. I was kind of like shy about calling out UX and, and bucketing some things there, but actually when I looked around, that's pretty much how everybody does a big launch. And in terms of the excitement level, that also like I went in thinking this is just a two. I guess part of it is like, I feel like we're almost fixing something that's broken. And that's not something you want to shout from the rooftops about. But actually some of that stuff's really cool. So I gave it a three excitement level. I wasn't sure exactly where to place things. But I figured I wouldn't like the Cindy's comment have something that's a one here anyway. But the only way I could make sense of like, the iterations was to bucket them as something. And so that's kind of how I came down on it. I don't know if you think about that. Yeah. I like that. Sorry, sorry. I have done a similar, I've taken a similar approach for monitor with incident management. There were a bunch of things that we released. Although the core of incident management was part of 12.x, I think. So I did the same there as well. Yeah. I think that makes sense. Yeah. That would help me with the plan stuff as well, because there are some things like epic forgs that people have been asking for for years now and they finally have. And that's great. But I think, you know, like the the milestone burn up charts. That was a two. And that's helpful. And I was looking for features and, you know, actual monthly features that were released in a given month. I mean, that was one of the more important ones. But it's not very exciting, but we can bundle that with some other things and up level it. So that would be helpful there. And also, Brian about the VS code thing. One other cool thing about that is both of those VS Code integrations that hit the same month were community contributions, which is also kind of cool. Is that, do we have VS Code listed on here? I didn't add it, but I can add that in. I've got good notes on that. The extension that had been around for a while became official. It was kind of one of the things, but there's some other stuff that's a little juicier than that. And I think that's a pretty good note as well. We did that with our Terraform module, right? There was like a community module, but now it's officially supported. So that's the, that can be the line yes or no, whether you can use the thing for a lot of businesses. So I think that's a good one too. How are we measuring excitement levels? One, two, and three. I was looking at maybe MAU as a metric to perhaps measure whether customers have started using that or not. We probably may not have it for everything, but at least some of it wherever we have it is probably something we can use. But of course, we need a benchmark level of what MAU we want to go on one, two, three. I think it's a little, it's a little bit of a judgment call, like, you know, for example, Kormack was saying, like, epic boards is something that was asked for for a long time. Now, depending on how it's asked for, maybe that means it's exciting or it's not, right? But usually when something gets a lot of upvotes or when there's a lot of demand for it, then I would bump the excitement level on something like that. Certainly, if something shifted a lot of people are using it, the MAU, that's another good measure. I don't know that any one of those needs to kind of be exclusive. I think it's a bit of an individual judgment column, just like what is your feeling based on, you know, could be anecdotal like you talk to customers and they're like really hyper excited about this, or maybe not, which is okay, I think it's okay. I was responded to my comment about why we have the low excitement ones and just said something about having them sort of stack ranked. Yeah, I might even constrain this, is we're not going to highlight low excitement, but we want to see the full spectrum, especially in the case we have slim pickings, alternatively if there are double digit entries, then we can stack rank. So that's kind of also helpful there. So if we have three for all of these, that, I mean, it looks like we're gonna get there and that's gonna be quite a lot of features. So I might constrain it like this. Maybe you can only give out one, one, two, or three. And entry does a stack rank rather than just like a raw excitement level that doesn't necessarily. Hard to, somebody's one, or somebody's three may be more important than somebody else's one depending on the. I started by just looking at what was considered a key feature over the past year from CREATE. And there are at least a dozen things that I'm not mentioning that could be on the list. I could give you 10 things instead of three. Give this just like the rough pass. And like a lot of things recently, I've been moving between docs and spreadsheet and the spreadsheet to docs. This might end up or submit or should have this might end up in a spreadsheet where we then try to stack rank in PRs. Like, OK, out of all of the, maybe 10 boxes here and three, each out of a 30 items which are the top five. Actually, let's just do that. Let's just do this top five overall. This one is a PR driven to some degree. What about the new Pencristy's product keynote at Komet? Are we going to tell him this with that? So this is exactly where this is headed to. Is the idea that during the product keynote and then ideally during kids' kids' keynote as well, that there's some level of like an announcement that we make that then the press cares about that announcement. Again, really tough to do at GitLab because it's all been around for a while. So this is our attempt ahead to that area. It has to say like these are the announcements of the event. And yeah, maybe it's some things that have been around for a while, but like now they're at a level of maturity. Now, you know, there's there's a reason to be excited about this. So that's kind of where it's coming from. So I put a top five overall. Maybe we can just, you know, you should reserve a spot for plan, but I'm going to have to go through and do some aggregating after this. Just go through the list of what shipped in the last 12 months and re-buck at that. So maybe we can do like five minutes kind of like just just time box and kind of look at these here. What do you all think is a top would be a top five out of the list of you know 20 or 30. I would say if UX does end up being a flag that we fly, that's an easy one because there's more than just maps to the create stage that would be considered UX improvement. Okay. What else? need to have a security one in there, we could have either vulnerability management or I was when I've been struggling with a little bit as I'd like to kind of group the some of this proprietary scanning. Without making it sound like they're scanning improvements because that sounds like they weren't good before. Yeah. Let's go with vulnerability management for now. I would agree on that one and I would say that some of these we did do some press around and the fuzzing acquisitions was one thing. So we might not get it out of that. That's kind of old. I was, I mean we did the fuzzing acquisitions a long time ago. Was it within the past year or longer? I thought it was within the past year. I think it was in the last little over six months or so. So it was last summer, right? We're something room there. It was like last spring or summer, and then we did another set of press around the integration of it, because the PR team liked all the, I mean, we got a lot of attention on the acquisition. So they had me do a follow up on the integration. I just feel like it's kind of worn out now. But right, that's what I was saying is that the, the fuzzing we already did press on through probably will not get another chomp at that. So I think let's go with vulnerability management. Unreviewed. Well, we also have, in terms of proprietary stuff, we've also got, we replaced one of our scanners with Semgrit, and we did, we have our own proprietary DAST scanner now that's in, it's in beta called Browseurker. So it's our answer to scanning single page applications which represent a unique challenge. I think, I mean, if I could have to, it would be vulnerability management in Berserk or probably. Okay. Some breadth that get picked up as a online item in a couple of pieces about get back 14. Which between the proprietary ships of the vulnerability management, which would you pick as the number one out of those two? Probably vulnerability management. Okay. I'm just kind of scamming the list. I would probably say like Kubernetes agent. is something that we've made a lot of investment in, although I think the Kubernetes agent and from an integration point of view, perhaps the Terraform integration, I think we have a lot of customers actually using that already. So. I'm gonna, I'm just gonna call those get-ops and I'm gonna put like KS agent plus S.E. for integrations. It's like a bucket of capabilities that is probably worth talking about. Well, let's try to, this is due Tuesday, I think. We want to try to get this done. So maybe just to review this kind of like, let's just kind of pick top five, maybe something from plan and something from CICD. Yeah, that plan editor's definitely an option for CICD. Yeah, there might be a, sorry, there might be a value stream analytics story in there too. If we aggregate it all, it's a bummer that customizable value stream analytics was 12.9. But yeah, there might be cool. I'm just gonna, I'm gonna ping you on this car back to add a top five plan. I think. Man, it's a pretty heavy, pretty heavy list. Just looking at it, you know, it's pretty cool. Yeah, that's good. Yeah, and this is something we don't do, which I, I agree. Like we don't, we don't often stop as a company and just kind of look at our wins. Nope. Uh, I was really, I don't, did you all, did anybody miss, uh, what do we call it? assembly, the assembly. If you missed it, I recommend it. I laughed because like what assembly reminds me of it like when I was in like a young child in grade school. They'd have this big stack of carpet. They're like squares of carpet. And you go into the gym and you pull off a square of carpet and all the children would sit on a square of carpet. And that was like you'd have an assembly. So that's how to put everyone in the gym or like convert the half cafeteria gym, take away the big barrier between it so that we can have more room and then take those carpets that have never been cleaned and just sit on them and it'll be great. Besides from the goofy name, I thought that, and of course we can't talk about any of it on YouTube, but man, that was a really awesome look back at, like, here's some wins and here's some exciting things that we've done. And so I think we just need to get better at this. This is a company. I think this exercise and opportunity that, I think we do a little bit of that, but this is doing it more. So, Samia, you have some questions here for Alita? Yes. So in the competitive sheet, I was, I mean, I've already identified the features for CD config, as well as monitor, getting it reviewed from PM. My guess was, or my understanding was that we wouldn't have the same set of competitors that we want to compare to, but the right competitors for that particular stage. So for example, for monitor, we may not have like a GitHub or something like that. We would have monitor-based competitors. Was that the understanding? Because we identified that entire list of competitors and partners for every single stage. I thought we were going to be using those competitors to compare against. So I just wanted your input on what's because I saw some of you have compared with the five competitors already listed over there. They may not be relevant. For example, Cloud Beats may not be relevant for monitor stage at all. So that's what I wanted to check with you. Yeah, that's the case. I need to go back and look at this spreadsheet. I mean, if the competitor does not apply to that particular stage, they shouldn't be on that tab in this spreadsheet. So are you saying that you see competitors on that tab for a stage where they don't apply? Yeah. I think it was copy pasted. Each rule has the same. Yeah. So each sheet has a DO at last year in GitHub, Jenkins, J-Frog and CloudBiz. Right? So that may not be relevant for monitor. So configure, it would be a different set of computers that we need to include, which I think we already identified a while back. I think we identified top three competitors for every stage. Yeah, we hear them. That's when we tear them, right? Tear one, tear two, two, three. So this, this, where we are right now is we're looking at just tier one competitors. That's probably why I cut and paste them because those are all tier ones. We're just focusing on tier one right now. So if they don't apply to that stage, don't worry about it. Make sense. So just pick the ones out of that list that apply to our stage. Right. I just could be just use the tier one competitors. And if they're not, if they don't, are not applicable, then we don't have to fill out anything for that yet for now, but then we'll move to tier two and tier three. Then we'll look at those. Do we need to add a line item for get lab as well, because I think that's the single here. Yeah, we should. I think you asked me that before, right? Or someone asked me. I'm just looking at it. Brian asked. Yeah, yeah, we did. Yeah, because the way without it, you're basically putting all the things that we're better at. Yeah, for sure. For sure. Yeah, right. So ideally, when we picked like the 10 to 15 features, those, some of those were like, get lab only, some of those were like, get lab didn't have. Well, I thought it was supposed to be not, none of them should be get lab only, right? It should be all through the lens of, yeah. Yeah, exactly. Yeah, it should be like market lens. So an ideal world, most of them are like, this is what I'm shopping for, this solution. Some, like some of them might be GitLab only, some of them might be like competitor only, so that it's a, somebody would look at it and be like, this looks honest and trustworthy in like an accurate assessment of the market. There. Yeah, it's fair. And then yeah, I think, Simon, for this, just to kind of reiterate, for this one, we're only doing these five competitors. So we'll do the other ones in a later stage. And then for if the vendor builds like bills themselves as a platform, then we should specifically call out that they have zero. So GitHub builds itself as a platform. It sells itself that way. Same with Azure DevOps, same with JFrog. Well, they all do for tier one except Jenkins and Cloudbees. Yeah, yeah, Jiggas clubbies does not. Yeah, right. But what is it? You know, azure DevOps, GitHub, Atlassian, and although Atlassians, we still need to figure something out there. That is a matter of fact that I go back and add a last thing because I. Based on conversation, I think we have to do it. I don't think we can leave them all. You know, I don't like to look at this version. It is. Atlassian is on that sheet. Okay. I went back and added them because based on a discussion. Like my. I went back and added them because based on discussion, like my, I wanted to take them off completely and just leave them as a partner, but we can't do that. So, yeah. So for those platform, you know, we should call out the fact that they don't have any monitoring. If they have like zero out of 15, we should call that out, same with the configured stuff for this, you know, any, those kind of capabilities. And me, and me, I think if we took that step further to be good to even describe it in the way that doesn't just say our product stage and use like a value based description of what monitor can figure you mean. Because otherwise, we're just, no, that's not gonna do any good for us. Are we guys seeing the new infographic that the design team has come up with? Ah, yeah. Oh, you have it. No. We have a link to that quickly, William. I don't know. Or you throw it in the notes if you find it. Let's see who can find it faster. I'm sure you're seeing it not with the amount of tabs I have open. Oh my God, that's what I'm like. It probably won't be me. So this is why I send everything to Google Gmail because the search is so fast. I literally have a folder where all of my GitLab things go and I can just search for I found it. I found it. I found it. I found it. I found it. I found it. I found it. I found it. I found it. Oh. So this is the one. So there's two. This is the one for the single two comparison, but then for the, but it's going to look the same. But then here's the one for. I just put it in chat for you guys. And here's the one for the platform players. So, so we made it, we made a couple decisions along the way. So, um, one of the decisions was to just go with stages. It would it would have been like a whole nother layer of, okay, if we don't go with just to get laps stages, the 10 stages, what what do we use? that has to be determined, reconciled, all this kind of stuff. Like, you know, we kind of, I don't know how long it's been since we updated. Those pages have like not been updated, but we kind of are just trying to move towards some sort of towards some progress. So I concur that maybe configuring monitors not as descriptive as it could be. But the place where it will, so actually I'll share one thing. It just seems like the right time to do this, right? Manage is even less descriptive than that. So the way this is getting built is off of a data model. So in theory, these could change or be updated where the underlying data remains the same, right? Because we're separating like presentation layer from data layer. So it's not going to be as hard to update in the future as it currently is where it's a massive spaghetti code and it's like really, really difficult update. And then the other component is then not in this iteration, we need to get something live. But in the next iteration, you'll click on verify and it'll go down to the list of the 15 features. And that's where you can describe what the heck of verify is, or what the heck of manage. OK, so we will have an opportunity because I was about to say you're going to hate me for this, but like we're being sick of go about the same problem we had, which being the audience coming in and not knowing anything about these specific stages. That was one of the big things. It's like, okay, 15, 15 features. What? What are they? Why do I care? To say that means nothing to me looking at this page. But quick question. I can be a Debbie Downer. That's it. No, we're on top of it. Actually, if you read the thread, I brought that up, but she said we can't do it right now, which I understand. But a small thing, What do you guys think about the colors? I usually let the designers handle that stuff. They... I like... I like the fact that there's no red on there. That's what I was going for. You like it? It's not obviously negative. So we're saying because it really does lend itself to being a comparison more than a competitive piece because of that, because there's no, you know, these folks at 37% are in the red and they're terrible, they just have less green or we would have less green. So it's not it's not being worse, it's being less good. And I think that lends itself to working with, you know, all the co-opitation situations we were talking about. Yeah. Yeah, that's that's a goal is we want we want to generate a helpful asset for the industry. This is not just like marketing shill. This should be like a helpful page. So yeah, the goals have a comparison comparing DevOps tools, not a, you know, this is all of our competitors and why we're better. Yeah. I think from a competitive mindset, and for me, I'm like, let's go hard. Let's put some rent on there. Let's just the way I think, right? So, but I've avoided them. And that for now, we're going to stick with the green. They recommend it was stick with with the green and see how it goes. But I don't know, I was feeling the red and yellow, too. So it is easy on the ice. You know, there's something to be said to that. So yeah. Cool. Well, we're almost up on time, but I did want to share one thing that kind of came in, like basically Friday, it was like late Thursday for me. So this, this is another thing, a lot of these things I don't have a ton of context on. I just know like we're just trying to up our game. So like, hey, let's move fast and do the best we can do. So this is a little bit of a messaging framework. And then the assignment that was given to me was to fill in these boxes here. So, and then this was the fodder that I got. So there was these ones that said like, from roadmap to company vision, we are transparent and a single source of truth countless possibilities. Honestly, I think this one's really like really pithy and catchy. I really like it. I really liked what's the other one that I liked that not everyone does. All in one for everyone. So I just, I don't know, I like, I just think so there's something catchy about that. But I know that kind of catchy is not everyone's cup of tea. All that to say is the assignment here was that I took it was to write a pithy few words like punchy statement for each of these three things. So I ended up with a single source of truth, countless possibilities, I liked that a lot. This one I went with end-to-end control over your software factory, not as pithy but like not as catchy, but I think I... like what's the difference between that slide and the next one that doesn't have anything under security? What's the difference? This was the honestly so that when I first got this, it didn't have this and it didn't have anything under security. So this was like, it was just your iteration of it. Yeah, this is mine. This is I just put here so that I would have like the original statements like, I'm kind of like that. But, you know, this one I hate, scale up speed up, test up. I don't think anybody tests up. I think that's really goofy. So, hate it. This one I love. That's for me. I love it or hate it. Right. I love how I love that. I just bang on. So anyway, the. What I love in just in five minutes now. And then we can kind of end the call. and the call is kind of like, anything that you would change this out for, anything that you would change this out for, and then actually let's start here. This one I couldn't pick, and I'll tell you why it's because I like things to have parity in their tone, right? So this is maybe like super nuanced elements of messaging, but I hate it if it's like a single source of truth That's like in noun phrase and the end control. That's like a noun item. So you could say with GitLab, you get a single source of truth. With GitLab, you get end-to-end control. And you can't say with GitLab, you get move fast with confidence. No, but you can say more speedless risk. I like that one the best. I don't like the last one. I agree. That's why I put this one at top for that parody. And then so it sounds like kind of y'all's thoughts or that's good as well. Yeah, the only thing it might be missing but I don't know how we do it without over complicating it is, well, I guess less risk also implies higher quality. I guess that kind of bundles the quality and the security together. So I've talked myself out of not liking that. So yeah, good. Cindy's last blog post had a really good turn of phrase that I stole for, for give that 14 and she was out. It was like secure the software factory and all the stuff that you're making. She said it really elegant. And it's deliverables. Secure the software factory and it's deliverables. Yeah, I thought it was good to emphasize both, because they mean that it's nuts. Yeah. Yeah, so you could say secure and control your software factory and it's deliverables. Maybe that would encompass both thoughts. I'm not a big fan of the, it's deliverables, is there, can we say like, your software factory and your software, or your software and your product? Product sounds like car manufacturer. You could say IP here, but it just doesn't sound right. And that's always to always short hand. Yeah. I like this one better. Yeah, I think I do too. But I appreciate the thought, Brian. And then the last thing I'll say is, so this is my attempt to channel my inner ash withers. I think ash is super good at just, again, just like the catchier, like the turn of phrase element to it. And so like this kind of idea, like single source of truth countless possibilities. Or all in one for everyone, there's something catchy about this. So here I was trying to envision, what is it that we actually give you with this velocity? It's like, it's velocity with confidence is what you get. I like your move fast with confidence better than increase speed and stay on track. Yeah, so I was trying to, I was thinking of like, you know, if you're like, if you're in a race car and like, you go like super, super fast, like let's say you're in the bike race, right? and you're going so fast and somebody holds out the sign and then half of the bike race collapses. It's almost kind of like you can keep going faster and faster and faster. And if somebody jumps out with a sign in the middle of the racetrack, you're not going to get tripped up by it because Git Labs, it's testing is going to catch that, it's security is going to catch that. All of those elements that allow you to move faster but to do so with confidence. Because otherwise as you're like the faster you go than it gets more dangerous. So trying to encapsulate that in this, like that was kind of where I was like, stay on track, but I didn't like it either. Did you just open the door? Or NASCAR partnership? Hey, NASCAR goes fast in terms of left, cause it get loud. So you're a new Ricky Bondi. You're a new Ricky Bondi. Yeah, so I don't think I like that one. And then I think between these two, I like to move fast with confidence, but I don't like the the verbiage of it because it doesn't have parity. So that's where I think more people need to do. Do you wanna add, maybe we can add high confidence or more confidence at the end of your first statement. So it kind of combines all of it. So more speed less risk high confidence. I was just saying confidence is kind of overused anyway. Like I see a lot of competitors of vendors using it. I really like the first one. Just more speed less risk. Bam, no trade-offs, you know, just, is how it is. Oh, no trade offs. I don't know. That's one of my go-to's. I love that one. This gets into the no trade offs. The engineer in me says, there's never no trade offs. That's like saying like 100% secure. Complete. This is why we always say mitigate, right? We always feel at risk or less risk. You never say no to that. You never say no. You never say no to messaging, right? everything you know. I'm just more speed less risk with confidence. What yeah, more speed. The Ricky Bobby and me really did like the no trade off so that Parker. Yeah. Oh was that was that from uh no but it could have been it's something Ricky Bobby would have said. If anyone hasn't seen Telodeganites they should. That's the homework for this weekend. in the Saturday as we talk about it on Monday and our little social work. I often say thank you little eight pound five ounce baby. Just with the golden diapers. I say that so often that I just think everybody has seen Taladegan nights but then I realize that people that haven't are like playing is really weird. And then next week we'll watch Step Brothers. That's another great one. So much room for activities. Okay, I'm gonna go with more speed less risk. And I think this is due at the end of the day, so any additional thoughts I'm actually gonna untag. I mean, strong, all those are, you know, cool. Those are good. Awesome. Well, this was kind of fun to do a little bit of like, working together session and keep it. Oh, last one, dance one. Keep it rocking. Good to see everybody. See you soon.",
+    "segments": [
+      {
+        "start": 0,
+        "end": 7.26,
+        "text": "I can record. And we don't have a ton of items to get to.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 9.3,
+        "end": 14.58,
+        "text": "And I might be able to do one that might be fun if we have a little bit of time.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 16.34,
+        "end": 27.12,
+        "text": "So corporate events, I think I saw a little, I put this in Slack and I saw a little bit of",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 27.12,
+        "end": 35.98,
+        "text": "kind of noise around it, which was good. The nutshell here is as we've kind of restructured",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 35.98,
+        "end": 43.36,
+        "text": "and tried different things, the event support that we need isn't as nailed down as it needs to be.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 44.72,
+        "end": 52.88,
+        "text": "So the current tactic that we're going with is go-to-market team signs up and kind of",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 52.88,
+        "end": 55.56,
+        "text": "of sponsors that event.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 55.56,
+        "end": 58.84,
+        "text": "So you supported the PMM, your campaign manager,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 58.84,
+        "end": 62,
+        "text": "does the campaigns for that event, et cetera, et cetera, et cetera.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 62.92,
+        "end": 66.9,
+        "text": "I don't see anyone in the,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 66.9,
+        "end": 68.66,
+        "text": "maybe there are comments in the issue.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 68.66,
+        "end": 72.36,
+        "text": "I don't see the header updated yet.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 72.36,
+        "end": 76.78,
+        "text": "I thought we had in Slack sort of farmed each one of them out.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 76.78,
+        "end": 79.22,
+        "text": "That's, so I guess the next,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 79.22,
+        "end": 85.88,
+        "text": "So it looks like Ty put in some folks.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 86.68,
+        "end": 90.5,
+        "text": "It looks like this looks good",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 90.5,
+        "end": 95.9,
+        "text": "so that, let's see, needs support from GTM teams.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 95.9,
+        "end": 98.58,
+        "text": "So I guess the ask would be",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 101.57,
+        "end": 103.81,
+        "text": "to work with your GTM teams.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 103.81,
+        "end": 108.65,
+        "text": "So let me ask, I saw some slack, I think an R slack,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 108.65,
+        "end": 112.49,
+        "text": "but did you all, were you all able to connect with",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 112.49,
+        "end": 114.33,
+        "text": "like your GTM teams.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 117.52,
+        "end": 120.92,
+        "text": "Unslagged only and on the issue actually.",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 120.92,
+        "end": 123.12,
+        "text": "Yeah, so I'm not in real time,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 123.12,
+        "end": 124.8,
+        "text": "but you know, source feedback.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 124.8,
+        "end": 127,
+        "text": "I got one person to respond so far.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 127,
+        "end": 128.92,
+        "text": "So it may end up Cindy being you and I",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 128.92,
+        "end": 130.36,
+        "text": "just picking the one that we wanna do.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 130.36,
+        "end": 132,
+        "text": "And then they can back us up.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 134.97,
+        "end": 138.72,
+        "text": "If we don't get any more feedback.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 138.72,
+        "end": 143.44,
+        "text": "Yeah, do you all, does anybody have like a regular sink",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 143.44,
+        "end": 146.04,
+        "text": "still are those all been canceled?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 146.04,
+        "end": 149.19,
+        "text": "Or is there a whole second?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 149.19,
+        "end": 151.5,
+        "text": "I'll have a rehearsal.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 151.5,
+        "end": 154.02,
+        "text": "Yeah, we're on like the two week cadence.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 154.02,
+        "end": 155.26,
+        "text": "OK.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 155.26,
+        "end": 162.42,
+        "text": "Yeah, GitHub's has been canceled after the enablement.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 162.42,
+        "end": 164.5,
+        "text": "Cool.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 164.5,
+        "end": 170.14,
+        "text": "So I'm just trying to catch up with the thread.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 170.14,
+        "end": 176.57,
+        "text": "So it looks like maybe a platform on reinvent CI-CD on Google",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 176.57,
+        "end": 182.89,
+        "text": "next and get ups on kube con. Does that sound right? Yeah. Yeah. That's where we were last I heard.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 184.17,
+        "end": 195.03,
+        "text": "Cool. So then I think we can help the core prevents team. They do a lot of cat hurting and",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 196.07,
+        "end": 203.27,
+        "text": "keep on tracking people down. So I think if this team can take the mission to try to help",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 203.27,
+        "end": 205.22,
+        "text": "I'll track that down.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 205.22,
+        "end": 209.06,
+        "text": "So if you get the commitment specifically",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 209.06,
+        "end": 210.1,
+        "text": "from your campaign managers,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 210.1,
+        "end": 213.9,
+        "text": "hey, like we're signing up for a coupon,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 213.9,
+        "end": 215.66,
+        "text": "can you comment on the issue that,",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 215.66,
+        "end": 219.1,
+        "text": "yes, I can commit to this, et cetera, et cetera, et cetera,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 221.68,
+        "end": 224.8,
+        "text": "so that just so that they can get that event support.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 224.8,
+        "end": 226.8,
+        "text": "But that looks good and I appreciate",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 228.5,
+        "end": 230.58,
+        "text": "thanks for the link to SOMI on the rolls.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 232.97,
+        "end": 235.54,
+        "text": "Product announcements.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 235.54,
+        "end": 238.34,
+        "text": "So I appreciate Brian for adding this.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 238.34,
+        "end": 242.5,
+        "text": "I probably should edit it, but.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 242.5,
+        "end": 245.38,
+        "text": "I had two questions about that one.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 245.38,
+        "end": 249.68,
+        "text": "One is over what timeframe are we looking at?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 249.68,
+        "end": 256.3,
+        "text": "So in theory, this could be the same as the GILAB 14",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 256.3,
+        "end": 260.02,
+        "text": "lunch where we're saying basically since 13.0,",
+        "isQuestion": true,
+        "fillerWords": [
+          "basically"
+        ]
+      },
+      {
+        "start": 260.02,
+        "end": 263.62,
+        "text": "what kind of big improvements have we made?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 263.62,
+        "end": 279.56,
+        "text": "I'm not totally sure of all of the kind of the interplay here, but I think this is kind",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 279.56,
+        "end": 285.06,
+        "text": "of the general gist of this assignment is okay, we have commit coming up.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 285.06,
+        "end": 292.02,
+        "text": "We have some amount of like we have a stage, you know, a metaphorical stage to say something",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "you know"
+        ]
+      },
+      {
+        "start": 292.02,
+        "end": 295.26,
+        "text": "into the world and we'll get some amount of press attention",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 295.26,
+        "end": 297.98,
+        "text": "because we're having an event, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 297.98,
+        "end": 299.74,
+        "text": "What kind of announcements do we make?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 300.94,
+        "end": 302.54,
+        "text": "At GitLab, it's really, really tough",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 302.54,
+        "end": 303.94,
+        "text": "to make product announcements",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 303.94,
+        "end": 307.64,
+        "text": "because our entire roadmap is completely public.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 307.64,
+        "end": 308.44,
+        "text": "Yadda, yadda, yadda.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 308.44,
+        "end": 313.79,
+        "text": "So the thought here is to, but also because our entire",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 314.15,
+        "end": 316.63,
+        "text": "roadmap is completely public and because we shift these",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 316.63,
+        "end": 319.63,
+        "text": "tiny little MVCs, a new feature will come out,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 319.63,
+        "end": 322.79,
+        "text": "but it'll be not really usable.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 322.79,
+        "end": 323.63,
+        "text": "So it takes a while.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 323.63,
+        "end": 326.67,
+        "text": "So if you look back over the past year and say,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 326.67,
+        "end": 328.83,
+        "text": "okay, like what started in the last year",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 328.83,
+        "end": 332.03,
+        "text": "but now is really like a full-fledged feature,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 332.03,
+        "end": 334.35,
+        "text": "what would be coming out of beta?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 335.35,
+        "end": 337.23,
+        "text": "Like if we were any other company,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 337.23,
+        "end": 339.67,
+        "text": "when we started a beta program in this last year,",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 339.67,
+        "end": 343.55,
+        "text": "what would be announcing is GA at commit?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 343.55,
+        "end": 346.59,
+        "text": "That's kind of my thought on it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 346.59,
+        "end": 347.83,
+        "text": "I see a couple of head now.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 347.83,
+        "end": 350.39,
+        "text": "So what do you think, Sydney?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 350.39,
+        "end": 354.23,
+        "text": "Yeah, I think I was inclined to group some things",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 354.23,
+        "end": 357.07,
+        "text": "to say like vulnerability management",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 357.07,
+        "end": 359.87,
+        "text": "because there were tiny little MVCs all the way along.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 359.87,
+        "end": 362.83,
+        "text": "But if you look at over the course of the year,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 362.83,
+        "end": 365.47,
+        "text": "we went from this to this,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 365.47,
+        "end": 367.39,
+        "text": "it makes more sense to me to highlight that",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 367.39,
+        "end": 370.35,
+        "text": "than any individual little thing.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 370.35,
+        "end": 375.83,
+        "text": "And then the other point was, we just had 14.0.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 376.03,
+        "end": 378.51,
+        "text": "Can we just, can we reuse some of those things",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 378.51,
+        "end": 379.95,
+        "text": "and plug them in here?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 379.95,
+        "end": 385.94,
+        "text": "Absolutely. Yeah. Yeah, and vulnerability management was one of the, you know, the features",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 385.94,
+        "end": 391.74,
+        "text": "out of we looked at 14.0. So I think, yeah, this is like, let's take the stuff from 14.0.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 391.74,
+        "end": 397.7,
+        "text": "And then maybe add a few more so that we can hit kind of different areas of press or give",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 397.7,
+        "end": 402.58,
+        "text": "our PR team. This is kind of like input into our PR team to give them fodder to go out with.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 402.58,
+        "end": 406.18,
+        "text": "And are we trying to hit three per stage?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 406.18,
+        "end": 409.94,
+        "text": "Yeah, ideally there's just three, you know,",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 409.94,
+        "end": 412.77,
+        "text": "three at a time per stage.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 412.77,
+        "end": 415.17,
+        "text": "And then I think y'all made some good notes",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 415.17,
+        "end": 416.45,
+        "text": "that okay, we need to add manage.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 416.45,
+        "end": 418.49,
+        "text": "So I see manage in here that's excellent.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 420.43,
+        "end": 424.06,
+        "text": "And integrations, we don't,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 424.06,
+        "end": 426.22,
+        "text": "well actually we have some pretty exciting integrations.",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 426.22,
+        "end": 427.46,
+        "text": "So we have,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 427.46,
+        "end": 428.86,
+        "text": "the Jira stuff is pretty good.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 428.86,
+        "end": 432.38,
+        "text": "There's a couple of things in integrations with VS code",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 432.38,
+        "end": 433.78,
+        "text": "that could be notable.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 433.78,
+        "end": 440.59,
+        "text": "But can I show what I did for SCN just to get some general",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 440.59,
+        "end": 441.47,
+        "text": "feedback on it?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 441.47,
+        "end": 444.83,
+        "text": "And if someone hasn't done it, maybe that'll also kick.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 444.83,
+        "end": 448.03,
+        "text": "I was going in simplest direction here,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 448.03,
+        "end": 450.75,
+        "text": "which was thinking, you know, a lot of,",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 450.75,
+        "end": 452.47,
+        "text": "and then I called them key iterations,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 452.47,
+        "end": 454.51,
+        "text": "the sort of specific things.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 454.51,
+        "end": 456.39,
+        "text": "So I listed a few specific things,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 456.39,
+        "end": 459.23,
+        "text": "like three or four per each as key iterations,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 459.23,
+        "end": 461.23,
+        "text": "but I called them something overall.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 461.23,
+        "end": 463.39,
+        "text": "So we would have like one thing to call them.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 463.39,
+        "end": 468.94,
+        "text": "There are several key iterations aligned with Giddyly Cluster,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 468.94,
+        "end": 474,
+        "text": "several that rolled up to a research-based user experience.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 474,
+        "end": 479.06,
+        "text": "And I was thinking like, I was shy on calling out UX as a bucket,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 479.06,
+        "end": 482.06,
+        "text": "except that actually that's super typical.",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 482.06,
+        "end": 485.06,
+        "text": "Like Windows 11 or anybody who's rolling stuff out,",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 485.06,
+        "end": 488.06,
+        "text": "they almost always have UX as one of their three things.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 488.06,
+        "end": 491.06,
+        "text": "And then they mentioned a longer list of stuff that aligns to that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 491.06,
+        "end": 495.5,
+        "text": "So, I, you know, forgave myself for doing something at first.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 495.5,
+        "end": 498.02,
+        "text": "I was kind of like shy about calling out UX and,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 498.02,
+        "end": 500.46,
+        "text": "and bucketing some things there, but actually when I looked around,",
+        "isQuestion": true,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 500.46,
+        "end": 503.86,
+        "text": "that's pretty much how everybody does a big launch.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 503.86,
+        "end": 505.94,
+        "text": "And in terms of the excitement level,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 505.94,
+        "end": 508.9,
+        "text": "that also like I went in thinking this is just a two.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 508.9,
+        "end": 510.78,
+        "text": "I guess part of it is like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 510.78,
+        "end": 513.02,
+        "text": "I feel like we're almost fixing something that's broken.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 513.02,
+        "end": 516.34,
+        "text": "And that's not something you want to shout from the rooftops about.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 516.34,
+        "end": 518.42,
+        "text": "But actually some of that stuff's really cool.",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 518.42,
+        "end": 520.9,
+        "text": "So I gave it a three excitement level.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 520.9,
+        "end": 523.7,
+        "text": "I wasn't sure exactly where to place things.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 523.7,
+        "end": 527.34,
+        "text": "But I figured I wouldn't like the Cindy's comment",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 527.34,
+        "end": 529.66,
+        "text": "have something that's a one here anyway.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 529.66,
+        "end": 532.54,
+        "text": "But the only way I could make sense of like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 532.54,
+        "end": 536.46,
+        "text": "the iterations was to bucket them as something.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 536.46,
+        "end": 539.14,
+        "text": "And so that's kind of how I came down on it.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 539.14,
+        "end": 544.54,
+        "text": "I don't know if you think about that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 544.54,
+        "end": 545.38,
+        "text": "Yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 545.38,
+        "end": 546.7,
+        "text": "I like that.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 546.7,
+        "end": 547.7,
+        "text": "Sorry, sorry.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 547.7,
+        "end": 551.54,
+        "text": "I have done a similar,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 551.54,
+        "end": 556.86,
+        "text": "I've taken a similar approach for monitor with incident management.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 556.86,
+        "end": 559.06,
+        "text": "There were a bunch of things that we released.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 560.16,
+        "end": 564.74,
+        "text": "Although the core of incident management was part of 12.x, I think.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 564.74,
+        "end": 568.58,
+        "text": "So I did the same there as well.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 568.58,
+        "end": 569.54,
+        "text": "Yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 569.54,
+        "end": 571.06,
+        "text": "I think that makes sense.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 571.06,
+        "end": 572.06,
+        "text": "Yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 572.06,
+        "end": 574.5,
+        "text": "That would help me with the plan stuff as well,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 574.5,
+        "end": 578.06,
+        "text": "because there are some things like epic forgs that people have been asking for",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 578.06,
+        "end": 580.66,
+        "text": "for years now and they finally have.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 580.66,
+        "end": 585.46,
+        "text": "And that's great. But I think, you know, like the the milestone burn up charts.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "you know"
+        ]
+      },
+      {
+        "start": 586.58,
+        "end": 592.02,
+        "text": "That was a two. And that's helpful. And I was looking for features and, you know, actual",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 592.02,
+        "end": 596.74,
+        "text": "monthly features that were released in a given month. I mean, that was one of the more important ones.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 596.74,
+        "end": 602.5,
+        "text": "But it's not very exciting, but we can bundle that with some other things and up level it. So",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 602.5,
+        "end": 607.86,
+        "text": "that would be helpful there. And also, Brian about the VS code thing. One other cool thing about that",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 607.86,
+        "end": 614.5,
+        "text": "is both of those VS Code integrations that hit the same month were community contributions,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 614.5,
+        "end": 621.8,
+        "text": "which is also kind of cool. Is that, do we have VS Code listed on here?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 623.75,
+        "end": 627.75,
+        "text": "I didn't add it, but I can add that in. I've got good notes on that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 628.39,
+        "end": 632.79,
+        "text": "The extension that had been around for a while became official. It was kind of one of the things,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 632.79,
+        "end": 635.03,
+        "text": "but there's some other stuff that's a little juicier than that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 635.03,
+        "end": 642.88,
+        "text": "And I think that's a pretty good note as well.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 644.61,
+        "end": 647.77,
+        "text": "We did that with our Terraform module, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 647.77,
+        "end": 649.65,
+        "text": "There was like a community module,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 649.65,
+        "end": 651.97,
+        "text": "but now it's officially supported.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 651.97,
+        "end": 656.57,
+        "text": "So that's the, that can be the line yes or no,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 656.57,
+        "end": 660.17,
+        "text": "whether you can use the thing for a lot of businesses.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 660.17,
+        "end": 662.45,
+        "text": "So I think that's a good one too.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 662.45,
+        "end": 665.05,
+        "text": "How are we measuring excitement levels?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 665.05,
+        "end": 666.49,
+        "text": "One, two, and three.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 666.49,
+        "end": 680.7,
+        "text": "I was looking at maybe MAU as a metric to perhaps measure whether customers have started using that or not.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 680.7,
+        "end": 690.7,
+        "text": "We probably may not have it for everything, but at least some of it wherever we have it is probably something we can use.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 690.7,
+        "end": 696.38,
+        "text": "But of course, we need a benchmark level of what MAU we want to go on one, two, three.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 698.13,
+        "end": 704.67,
+        "text": "I think it's a little, it's a little bit of a judgment call, like, you know, for example,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "you know"
+        ]
+      },
+      {
+        "start": 704.67,
+        "end": 709.83,
+        "text": "Kormack was saying, like, epic boards is something that was asked for for a long time.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 710.27,
+        "end": 715.75,
+        "text": "Now, depending on how it's asked for, maybe that means it's exciting or it's not, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 715.75,
+        "end": 720.75,
+        "text": "But usually when something gets a lot of upvotes",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 720.91,
+        "end": 723.01,
+        "text": "or when there's a lot of demand for it,",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 723.01,
+        "end": 724.87,
+        "text": "then I would bump the excitement level",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 724.87,
+        "end": 726.03,
+        "text": "on something like that.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 727.77,
+        "end": 730.05,
+        "text": "Certainly, if something shifted a lot of people",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 730.05,
+        "end": 733.73,
+        "text": "are using it, the MAU, that's another good measure.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 733.73,
+        "end": 737.17,
+        "text": "I don't know that any one of those needs to kind of be exclusive.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 737.17,
+        "end": 739.61,
+        "text": "I think it's a bit of an individual judgment column,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 739.61,
+        "end": 744.57,
+        "text": "just like what is your feeling based on, you know,",
+        "isQuestion": true,
+        "fillerWords": [
+          "like",
+          "you know"
+        ]
+      },
+      {
+        "start": 744.57,
+        "end": 746.49,
+        "text": "could be anecdotal like you talk to customers",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 746.49,
+        "end": 754.7,
+        "text": "and they're like really hyper excited about this,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 754.7,
+        "end": 758.28,
+        "text": "or maybe not, which is okay, I think it's okay.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 760.48,
+        "end": 763.68,
+        "text": "I was responded to my comment about why we have",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 763.68,
+        "end": 767.28,
+        "text": "the low excitement ones and just said something about",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 767.28,
+        "end": 770.49,
+        "text": "having them sort of stack ranked.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 770.49,
+        "end": 775.9,
+        "text": "Yeah, I might even constrain this,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 775.9,
+        "end": 777.66,
+        "text": "is we're not going to highlight low excitement,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 777.66,
+        "end": 780.26,
+        "text": "but we want to see the full spectrum,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 780.26,
+        "end": 782.06,
+        "text": "especially in the case we have slim pickings,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 782.06,
+        "end": 785.4,
+        "text": "alternatively if there are double digit entries,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 785.4,
+        "end": 787,
+        "text": "then we can stack rank.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 790.88,
+        "end": 793.88,
+        "text": "So that's kind of also helpful there.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 793.88,
+        "end": 796.28,
+        "text": "So if we have three for all of these,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 796.28,
+        "end": 799.28,
+        "text": "that, I mean, it looks like we're gonna get there",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 799.28,
+        "end": 802.77,
+        "text": "and that's gonna be quite a lot of features.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 802.77,
+        "end": 807.42,
+        "text": "So I might constrain it like this.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 807.42,
+        "end": 812.71,
+        "text": "Maybe you can only give out one, one, two, or three.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 812.71,
+        "end": 814.51,
+        "text": "And entry does a stack rank",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 814.51,
+        "end": 817.67,
+        "text": "rather than just like a raw excitement level",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 817.67,
+        "end": 819.43,
+        "text": "that doesn't necessarily.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 819.43,
+        "end": 823.39,
+        "text": "Hard to, somebody's one, or somebody's three",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 823.39,
+        "end": 826.51,
+        "text": "may be more important than somebody else's one",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 826.51,
+        "end": 827.51,
+        "text": "depending on the.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 829.35,
+        "end": 831.35,
+        "text": "I started by just looking at what was considered",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 831.35,
+        "end": 835.55,
+        "text": "a key feature over the past year from CREATE.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 835.55,
+        "end": 838.23,
+        "text": "And there are at least a dozen things",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 838.23,
+        "end": 841.95,
+        "text": "that I'm not mentioning that could be on the list.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 841.95,
+        "end": 844.95,
+        "text": "I could give you 10 things instead of three.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 844.95,
+        "end": 849.11,
+        "text": "Give this just like the rough pass.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 849.11,
+        "end": 852.89,
+        "text": "And like a lot of things recently,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 852.89,
+        "end": 854.89,
+        "text": "I've been moving between docs and spreadsheet",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 854.89,
+        "end": 856.97,
+        "text": "and the spreadsheet to docs.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 856.97,
+        "end": 860.05,
+        "text": "This might end up or submit or should have",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 860.05,
+        "end": 861.29,
+        "text": "this might end up in a spreadsheet",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 861.29,
+        "end": 863.45,
+        "text": "where we then try to stack rank in PRs.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 863.45,
+        "end": 868.97,
+        "text": "Like, OK, out of all of the, maybe 10 boxes here and three,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 868.97,
+        "end": 873.76,
+        "text": "each out of a 30 items which are the top five.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 873.76,
+        "end": 876.24,
+        "text": "Actually, let's just do that.",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 876.24,
+        "end": 881.8,
+        "text": "Let's just do this top five overall.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 881.8,
+        "end": 884.24,
+        "text": "This one is a PR driven to some degree.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 884.24,
+        "end": 888.04,
+        "text": "What about the new Pencristy's product keynote at Komet?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 888.04,
+        "end": 890.6,
+        "text": "Are we going to tell him this with that?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 890.6,
+        "end": 894.76,
+        "text": "So this is exactly where this is headed to.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 894.76,
+        "end": 898.48,
+        "text": "Is the idea that during the product keynote",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 898.48,
+        "end": 901.8,
+        "text": "and then ideally during kids' kids' keynote as well,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 901.8,
+        "end": 904.44,
+        "text": "that there's some level of like an announcement",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 904.44,
+        "end": 907.08,
+        "text": "that we make that then the press cares",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 907.08,
+        "end": 908.36,
+        "text": "about that announcement.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 909.56,
+        "end": 911.48,
+        "text": "Again, really tough to do at GitLab",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 911.48,
+        "end": 913.2,
+        "text": "because it's all been around for a while.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 913.2,
+        "end": 916.84,
+        "text": "So this is our attempt ahead to that area.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 916.84,
+        "end": 919.84,
+        "text": "It has to say like these are the announcements of the event.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 919.84,
+        "end": 923.16,
+        "text": "And yeah, maybe it's some things that have been around for a while,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 923.16,
+        "end": 925.76,
+        "text": "but like now they're at a level of maturity.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 925.76,
+        "end": 929.76,
+        "text": "Now, you know, there's there's a reason to be excited about this.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 930.32,
+        "end": 932.56,
+        "text": "So that's kind of where it's coming from.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 933.69,
+        "end": 938.09,
+        "text": "So I put a top five overall.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 940.18,
+        "end": 943.96,
+        "text": "Maybe we can just, you know,",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 949.4,
+        "end": 955,
+        "text": "you should reserve a spot for plan, but I'm going to have to go through and do some aggregating after this.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 955,
+        "end": 959.04,
+        "text": "Just go through the list of what shipped in the last 12 months and re-buck at that.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 959.04,
+        "end": 986.74,
+        "text": "So maybe we can do like five minutes kind of like just just time box and kind of look at these here. What do you all think is a top would be a top five out of the list of you know 20 or 30.",
+        "isQuestion": true,
+        "fillerWords": [
+          "like",
+          "like",
+          "you know"
+        ]
+      },
+      {
+        "start": 986.74,
+        "end": 997.74,
+        "text": "I would say if UX does end up being a flag that we fly, that's an easy one because there's more than just maps to the create stage that would be considered UX improvement.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 997.74,
+        "end": 1008.48,
+        "text": "Okay. What else?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1008.48,
+        "end": 1012.56,
+        "text": "need to have a security one in there, we could have either vulnerability management or",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1012.56,
+        "end": 1021.77,
+        "text": "I was when I've been struggling with a little bit as I'd like to kind of group the some",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1021.77,
+        "end": 1028.63,
+        "text": "of this proprietary scanning.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1028.63,
+        "end": 1033.15,
+        "text": "Without making it sound like they're scanning improvements because that sounds like they",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 1033.15,
+        "end": 1034.99,
+        "text": "weren't good before.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1034.99,
+        "end": 1037.36,
+        "text": "Yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1037.36,
+        "end": 1040.12,
+        "text": "Let's go with vulnerability management for now.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1040.12,
+        "end": 1047.26,
+        "text": "I would agree on that one and I would say that some of these we did do some press around and the",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1047.26,
+        "end": 1051.34,
+        "text": "fuzzing acquisitions was one thing. So we might not get it out of that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1051.34,
+        "end": 1058.32,
+        "text": "That's kind of old. I was, I mean we did the fuzzing acquisitions a long time ago.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1060.04,
+        "end": 1066.46,
+        "text": "Was it within the past year or longer? I thought it was within the past year.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1066.46,
+        "end": 1070.06,
+        "text": "I think it was in the last little over six months or so.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1070.06,
+        "end": 1072.3,
+        "text": "So it was last summer, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1072.3,
+        "end": 1073.3,
+        "text": "We're something room there.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1073.3,
+        "end": 1075.1,
+        "text": "It was like last spring or summer,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1075.1,
+        "end": 1077.5,
+        "text": "and then we did another set of press",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1077.5,
+        "end": 1081.94,
+        "text": "around the integration of it, because the PR team liked all the,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1081.94,
+        "end": 1084.34,
+        "text": "I mean, we got a lot of attention on the acquisition.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1084.34,
+        "end": 1090.24,
+        "text": "So they had me do a follow up on the integration.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1090.24,
+        "end": 1092.44,
+        "text": "I just feel like it's kind of worn out now.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1092.44,
+        "end": 1094.8,
+        "text": "But right, that's what I was saying is that the,",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1094.8,
+        "end": 1097.96,
+        "text": "the fuzzing we already did press on through probably",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1097.96,
+        "end": 1099.32,
+        "text": "will not get another chomp at that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1099.32,
+        "end": 1102.39,
+        "text": "So I think let's go with vulnerability management.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1102.39,
+        "end": 1103.39,
+        "text": "Unreviewed.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1103.39,
+        "end": 1106.59,
+        "text": "Well, we also have, in terms of proprietary stuff,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1106.59,
+        "end": 1110.67,
+        "text": "we've also got, we replaced one of our scanners",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1110.67,
+        "end": 1113.76,
+        "text": "with Semgrit, and we did,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1113.76,
+        "end": 1116.92,
+        "text": "we have our own proprietary DAST scanner now",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1116.92,
+        "end": 1121.92,
+        "text": "that's in, it's in beta called Browseurker.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1122.52,
+        "end": 1126.64,
+        "text": "So it's our answer to scanning single page applications",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1126.64,
+        "end": 1129.48,
+        "text": "which represent a unique challenge.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1129.48,
+        "end": 1133.36,
+        "text": "I think, I mean, if I could have to,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1133.36,
+        "end": 1137,
+        "text": "it would be vulnerability management in Berserk or probably.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1137,
+        "end": 1137.92,
+        "text": "Okay.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1137.92,
+        "end": 1140.48,
+        "text": "Some breadth that get picked up as a online item",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1140.48,
+        "end": 1142.8,
+        "text": "in a couple of pieces about get back 14.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1148.36,
+        "end": 1152.32,
+        "text": "Which between the proprietary ships",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1152.32,
+        "end": 1153.4,
+        "text": "of the vulnerability management,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1153.4,
+        "end": 1157.39,
+        "text": "which would you pick as the number one out of those two?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1157.39,
+        "end": 1159.47,
+        "text": "Probably vulnerability management.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1159.47,
+        "end": 1162.04,
+        "text": "Okay.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1162.04,
+        "end": 1164.44,
+        "text": "I'm just kind of scamming the list.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1164.44,
+        "end": 1167.24,
+        "text": "I would probably say like Kubernetes agent.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1167.77,
+        "end": 1171.3,
+        "text": "is something that we've made a lot of investment in,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1171.3,
+        "end": 1178.66,
+        "text": "although I think the Kubernetes agent",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1178.66,
+        "end": 1181.78,
+        "text": "and from an integration point of view,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1183.71,
+        "end": 1185.59,
+        "text": "perhaps the Terraform integration,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1185.59,
+        "end": 1189.51,
+        "text": "I think we have a lot of customers actually",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 1189.51,
+        "end": 1191.35,
+        "text": "using that already.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1191.35,
+        "end": 1192.43,
+        "text": "So.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1192.43,
+        "end": 1197.05,
+        "text": "I'm gonna, I'm just gonna call those get-ops",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1197.05,
+        "end": 1202.95,
+        "text": "and I'm gonna put like KS agent plus S.E.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1203.63,
+        "end": 1207.09,
+        "text": "for integrations.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1207.09,
+        "end": 1208.93,
+        "text": "It's like a bucket of capabilities",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1208.93,
+        "end": 1211.13,
+        "text": "that is probably worth talking about.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1221.75,
+        "end": 1227.39,
+        "text": "Well, let's try to, this is due Tuesday, I think.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1227.67,
+        "end": 1229.35,
+        "text": "We want to try to get this done.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1231,
+        "end": 1234.4,
+        "text": "So maybe just to review this kind of like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1234.4,
+        "end": 1236.6,
+        "text": "let's just kind of pick top five,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1236.6,
+        "end": 1239.36,
+        "text": "maybe something from plan and something from CICD.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1239.36,
+        "end": 1243.59,
+        "text": "Yeah, that plan editor's definitely an option for CICD.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1243.59,
+        "end": 1252.13,
+        "text": "Yeah, there might be a, sorry, there might be a value stream analytics story in there too.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1252.13,
+        "end": 1258.13,
+        "text": "If we aggregate it all, it's a bummer that customizable value stream analytics was 12.9.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1258.13,
+        "end": 1266.62,
+        "text": "But yeah, there might be cool.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1266.62,
+        "end": 1271.82,
+        "text": "I'm just gonna, I'm gonna ping you on this car back to add a top five plan.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1271.82,
+        "end": 1281.11,
+        "text": "I think.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1281.11,
+        "end": 1285.1,
+        "text": "Man, it's a pretty heavy, pretty heavy list.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1285.1,
+        "end": 1287.1,
+        "text": "Just looking at it, you know, it's pretty cool.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 1287.1,
+        "end": 1289.87,
+        "text": "Yeah, that's good.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1289.87,
+        "end": 1292.67,
+        "text": "Yeah, and this is something we don't do, which I, I agree.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1292.67,
+        "end": 1300.14,
+        "text": "Like we don't, we don't often stop as a company and just kind of look at our wins.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1300.14,
+        "end": 1301.14,
+        "text": "Nope.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1301.14,
+        "end": 1307.2,
+        "text": "Uh, I was really, I don't, did you all, did anybody miss, uh, what do we call it?",
+        "isQuestion": true,
+        "fillerWords": [
+          "uh",
+          "uh"
+        ]
+      },
+      {
+        "start": 1307.2,
+        "end": 1320.94,
+        "text": "assembly, the assembly. If you missed it, I recommend it. I laughed because like what assembly reminds me of it like when I was in like a young child in grade school.",
+        "isQuestion": true,
+        "fillerWords": [
+          "like",
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 1320.94,
+        "end": 1323.54,
+        "text": "They'd have this big stack of carpet.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1323.54,
+        "end": 1325.44,
+        "text": "They're like squares of carpet.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1325.44,
+        "end": 1330.06,
+        "text": "And you go into the gym and you pull off a square of carpet",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1330.06,
+        "end": 1333.22,
+        "text": "and all the children would sit on a square of carpet.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1333.22,
+        "end": 1335.34,
+        "text": "And that was like you'd have an assembly.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1335.34,
+        "end": 1339.56,
+        "text": "So that's how to put everyone in the gym",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1339.56,
+        "end": 1342.42,
+        "text": "or like convert the half cafeteria gym,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1342.42,
+        "end": 1345.9,
+        "text": "take away the big barrier between it so that we can have more room",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1345.9,
+        "end": 1348.54,
+        "text": "and then take those carpets that have never been cleaned",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1348.54,
+        "end": 1352.1,
+        "text": "and just sit on them and it'll be great.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1352.1,
+        "end": 1355.62,
+        "text": "Besides from the goofy name, I thought that,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1355.62,
+        "end": 1358.34,
+        "text": "and of course we can't talk about any of it on YouTube,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1358.34,
+        "end": 1361.7,
+        "text": "but man, that was a really awesome look back at,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1361.7,
+        "end": 1364.26,
+        "text": "like, here's some wins and here's some exciting things",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1364.26,
+        "end": 1365.9,
+        "text": "that we've done.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1365.9,
+        "end": 1368.18,
+        "text": "And so I think we just need to get better at this.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1368.18,
+        "end": 1369.02,
+        "text": "This is a company.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1369.02,
+        "end": 1371.5,
+        "text": "I think this exercise and opportunity that,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1371.5,
+        "end": 1373.86,
+        "text": "I think we do a little bit of that, but this is doing it more.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1373.86,
+        "end": 1380.18,
+        "text": "So, Samia, you have some questions here for Alita?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1380.18,
+        "end": 1395.72,
+        "text": "Yes. So in the competitive sheet, I was, I mean, I've already identified the features for CD config, as well as monitor, getting it reviewed from PM.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1395.72,
+        "end": 1405.72,
+        "text": "My guess was, or my understanding was that we wouldn't have the same set of competitors that we want to compare to, but the right competitors for that particular stage.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1405.72,
+        "end": 1412.84,
+        "text": "So for example, for monitor, we may not have like a GitHub or something like that.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 1412.84,
+        "end": 1414.92,
+        "text": "We would have monitor-based competitors.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1416.44,
+        "end": 1423.32,
+        "text": "Was that the understanding? Because we identified that entire list of competitors and partners",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1423.32,
+        "end": 1430.6,
+        "text": "for every single stage. I thought we were going to be using those competitors to compare against.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1430.6,
+        "end": 1437.56,
+        "text": "So I just wanted your input on what's because I saw some of you have compared with the five",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1437.56,
+        "end": 1443.8,
+        "text": "competitors already listed over there. They may not be relevant. For example, Cloud Beats may",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1443.8,
+        "end": 1449.24,
+        "text": "not be relevant for monitor stage at all. So that's what I wanted to check with you.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1449.24,
+        "end": 1453,
+        "text": "Yeah, that's the case. I need to go back and look at this spreadsheet. I mean, if the",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1453,
+        "end": 1458.2,
+        "text": "competitor does not apply to that particular stage, they shouldn't be on that tab in this spreadsheet.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1458.2,
+        "end": 1464.12,
+        "text": "So are you saying that you see competitors on that tab for a stage where they don't apply?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1464.84,
+        "end": 1468.36,
+        "text": "Yeah. I think it was copy pasted. Each rule has the same.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1468.36,
+        "end": 1475,
+        "text": "Yeah. So each sheet has a DO at last year in GitHub, Jenkins, J-Frog and CloudBiz.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1475,
+        "end": 1481.08,
+        "text": "Right? So that may not be relevant for monitor. So configure, it would be a different set of",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1481.08,
+        "end": 1486.44,
+        "text": "computers that we need to include, which I think we already identified a while back. I think we",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1486.44,
+        "end": 1489.8,
+        "text": "identified top three competitors for every stage.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1490.04,
+        "end": 1493.64,
+        "text": "Yeah, we hear them. That's when we tear them, right? Tear one, tear two, two, three.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1493.64,
+        "end": 1497.48,
+        "text": "So this, this, where we are right now is we're looking at just tier one competitors.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1497.68,
+        "end": 1500.48,
+        "text": "That's probably why I cut and paste them because those are all tier ones.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1501.28,
+        "end": 1504.52,
+        "text": "We're just focusing on tier one right now. So if they don't apply to that stage,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1504.52,
+        "end": 1506.81,
+        "text": "don't worry about it. Make sense.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1507.53,
+        "end": 1510.53,
+        "text": "So just pick the ones out of that list that apply to our stage.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1510.97,
+        "end": 1514.89,
+        "text": "Right. I just could be just use the tier one competitors.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1514.89,
+        "end": 1524.13,
+        "text": "And if they're not, if they don't, are not applicable, then we don't have to fill out anything for that yet for now, but then we'll move to tier two and tier three.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1524.37,
+        "end": 1525.53,
+        "text": "Then we'll look at those.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1526.53,
+        "end": 1532.65,
+        "text": "Do we need to add a line item for get lab as well, because I think that's the single here.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1533.33,
+        "end": 1534.77,
+        "text": "Yeah, we should.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1535.65,
+        "end": 1537.93,
+        "text": "I think you asked me that before, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1538.88,
+        "end": 1539.72,
+        "text": "Or someone asked me.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1539.72,
+        "end": 1541.08,
+        "text": "I'm just looking at it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1541.08,
+        "end": 1542.08,
+        "text": "Brian asked.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1542.08,
+        "end": 1543.92,
+        "text": "Yeah, yeah, we did.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1543.92,
+        "end": 1550.8,
+        "text": "Yeah, because the way without it, you're basically putting all the things that we're better at.",
+        "isQuestion": false,
+        "fillerWords": [
+          "basically"
+        ]
+      },
+      {
+        "start": 1550.8,
+        "end": 1552.08,
+        "text": "Yeah, for sure.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1552.08,
+        "end": 1553.12,
+        "text": "For sure.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1553.12,
+        "end": 1553.84,
+        "text": "Yeah, right.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1553.84,
+        "end": 1558.16,
+        "text": "So ideally, when we picked like the 10 to 15 features,",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1559.57,
+        "end": 1564.13,
+        "text": "those, some of those were like, get lab only, some of those were like, get lab didn't have.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 1565.88,
+        "end": 1568.76,
+        "text": "Well, I thought it was supposed to be not, none of them should be get lab only, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1568.76,
+        "end": 1571.48,
+        "text": "It should be all through the lens of, yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1571.48,
+        "end": 1576.68,
+        "text": "Yeah, exactly. Yeah, it should be like market lens. So an ideal world, most of them are like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 1576.68,
+        "end": 1581.64,
+        "text": "this is what I'm shopping for, this solution. Some, like some of them might be GitLab only,",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1581.64,
+        "end": 1586.68,
+        "text": "some of them might be like competitor only, so that it's a, somebody would look at it and be like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 1586.68,
+        "end": 1591.16,
+        "text": "this looks honest and trustworthy in like an accurate assessment of the market.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1591.16,
+        "end": 1592.52,
+        "text": "There. Yeah, it's fair.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1593.56,
+        "end": 1598.52,
+        "text": "And then yeah, I think, Simon, for this, just to kind of reiterate, for this one, we're only doing",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1598.52,
+        "end": 1606.52,
+        "text": "these five competitors. So we'll do the other ones in a later stage. And then for if the vendor",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1606.52,
+        "end": 1613.72,
+        "text": "builds like bills themselves as a platform, then we should specifically call out that they have zero.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1613.72,
+        "end": 1622.28,
+        "text": "So GitHub builds itself as a platform. It sells itself that way. Same with Azure DevOps, same with JFrog.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1622.76,
+        "end": 1626.12,
+        "text": "Well, they all do for tier one except Jenkins and Cloudbees.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1626.12,
+        "end": 1628.12,
+        "text": "Yeah, yeah, Jiggas clubbies does not.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1628.12,
+        "end": 1629.12,
+        "text": "Yeah, right.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1629.12,
+        "end": 1630.12,
+        "text": "But what is it?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1630.12,
+        "end": 1632.24,
+        "text": "You know, azure DevOps, GitHub,",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 1632.24,
+        "end": 1634.34,
+        "text": "Atlassian,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1634.34,
+        "end": 1635.34,
+        "text": "and although Atlassians,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1635.34,
+        "end": 1637.44,
+        "text": "we still need to figure something out there.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1637.44,
+        "end": 1640.44,
+        "text": "That is a matter of fact that I go back and add a last thing because I.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1640.44,
+        "end": 1642.44,
+        "text": "Based on conversation, I think we have to do it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1642.44,
+        "end": 1644.44,
+        "text": "I don't think we can leave them all.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1644.44,
+        "end": 1646.44,
+        "text": "You know, I don't like to look at this version.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "you know"
+        ]
+      },
+      {
+        "start": 1646.44,
+        "end": 1647.44,
+        "text": "It is.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1647.44,
+        "end": 1648.44,
+        "text": "Atlassian is on that sheet.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1648.44,
+        "end": 1649.44,
+        "text": "Okay.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1649.44,
+        "end": 1651.44,
+        "text": "I went back and added them because based on a discussion.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1651.44,
+        "end": 1652.44,
+        "text": "Like my.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1652.44,
+        "end": 1655.24,
+        "text": "I went back and added them because based on discussion,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1655.24,
+        "end": 1658.92,
+        "text": "like my, I wanted to take them off completely",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1658.92,
+        "end": 1661.52,
+        "text": "and just leave them as a partner, but we can't do that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1661.52,
+        "end": 1664.24,
+        "text": "So, yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1664.24,
+        "end": 1667.32,
+        "text": "So for those platform, you know,",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 1667.32,
+        "end": 1669.84,
+        "text": "we should call out the fact that they don't have any monitoring.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1669.84,
+        "end": 1672.16,
+        "text": "If they have like zero out of 15,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1672.16,
+        "end": 1675.16,
+        "text": "we should call that out, same with the configured stuff",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1675.16,
+        "end": 1680.38,
+        "text": "for this, you know, any, those kind of capabilities.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 1680.38,
+        "end": 1682.54,
+        "text": "And me, and me, I think if we took that step further",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1682.54,
+        "end": 1684.06,
+        "text": "to be good to even describe it in the way",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1684.06,
+        "end": 1685.7,
+        "text": "that doesn't just say our product stage",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1685.7,
+        "end": 1687.94,
+        "text": "and use like a value based description",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1687.94,
+        "end": 1689.58,
+        "text": "of what monitor can figure you mean.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1689.58,
+        "end": 1691.38,
+        "text": "Because otherwise, we're just,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1691.38,
+        "end": 1694.46,
+        "text": "no, that's not gonna do any good for us.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1694.46,
+        "end": 1695.86,
+        "text": "Are we guys seeing the new infographic",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1695.86,
+        "end": 1698.5,
+        "text": "that the design team has come up with?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1698.5,
+        "end": 1699.94,
+        "text": "Ah, yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1699.94,
+        "end": 1700.98,
+        "text": "Oh, you have it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1700.98,
+        "end": 1702.29,
+        "text": "No.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1702.29,
+        "end": 1704.73,
+        "text": "We have a link to that quickly, William.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1704.73,
+        "end": 1705.57,
+        "text": "I don't know.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1705.57,
+        "end": 1709.17,
+        "text": "Or you throw it in the notes if you find it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1711.57,
+        "end": 1713.61,
+        "text": "Let's see who can find it faster.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1713.61,
+        "end": 1717.21,
+        "text": "I'm sure you're seeing it not with the amount of tabs I have open.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1717.21,
+        "end": 1719.41,
+        "text": "Oh my God, that's what I'm like.",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1719.41,
+        "end": 1721.89,
+        "text": "It probably won't be me.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1721.89,
+        "end": 1730.17,
+        "text": "So this is why I send everything to Google Gmail because the search is so fast.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1730.17,
+        "end": 1736.54,
+        "text": "I literally have a folder where all of my GitLab things go and I can just search for",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1736.54,
+        "end": 1745.54,
+        "text": "I found it. I found it. I found it. I found it. I found it. I found it. I found it. I found it. I found it. Oh.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1745.54,
+        "end": 1754.54,
+        "text": "So this is the one. So there's two. This is the one for the single two comparison, but then for the, but it's going to look the same. But then here's the one for.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1754.54,
+        "end": 1757.54,
+        "text": "I just put it in chat for you guys.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1757.54,
+        "end": 1762.54,
+        "text": "And here's the one for the platform players.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1762.54,
+        "end": 1775.1,
+        "text": "So, so we made it, we made a couple decisions along the way. So, um, one of the decisions was to just go with stages.",
+        "isQuestion": false,
+        "fillerWords": [
+          "um"
+        ]
+      },
+      {
+        "start": 1775.1,
+        "end": 1784.1,
+        "text": "It would it would have been like a whole nother layer of, okay, if we don't go with just to get laps stages, the 10 stages, what what do we use?",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1784.1,
+        "end": 1788.1,
+        "text": "that has to be determined, reconciled, all this kind of stuff.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1788.1,
+        "end": 1794.58,
+        "text": "Like, you know, we kind of, I don't know how long it's been since we updated.",
+        "isQuestion": true,
+        "fillerWords": [
+          "like",
+          "you know"
+        ]
+      },
+      {
+        "start": 1794.58,
+        "end": 1801.58,
+        "text": "Those pages have like not been updated, but we kind of are just trying to move towards some sort of towards some progress.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1801.58,
+        "end": 1807.58,
+        "text": "So I concur that maybe configuring monitors not as descriptive as it could be.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1807.58,
+        "end": 1812.58,
+        "text": "But the place where it will, so actually I'll share one thing.",
+        "isQuestion": true,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 1812.58,
+        "end": 1815.76,
+        "text": "It just seems like the right time to do this, right?",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1815.76,
+        "end": 1818.54,
+        "text": "Manage is even less descriptive than that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1818.54,
+        "end": 1825.74,
+        "text": "So the way this is getting built is off of a data model.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1825.74,
+        "end": 1830.3,
+        "text": "So in theory, these could change or be updated",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1830.3,
+        "end": 1833.34,
+        "text": "where the underlying data remains the same, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1833.34,
+        "end": 1837.18,
+        "text": "Because we're separating like presentation layer",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1837.18,
+        "end": 1840.91,
+        "text": "from data layer.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1840.91,
+        "end": 1843.35,
+        "text": "So it's not going to be as hard to update",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1843.35,
+        "end": 1846.47,
+        "text": "in the future as it currently is where it's a massive spaghetti",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1846.47,
+        "end": 1849.27,
+        "text": "code and it's like really, really difficult update.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1849.27,
+        "end": 1853.72,
+        "text": "And then the other component is then not in this iteration,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1853.72,
+        "end": 1855.28,
+        "text": "we need to get something live.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1855.28,
+        "end": 1858.64,
+        "text": "But in the next iteration, you'll click on verify",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1858.64,
+        "end": 1862.16,
+        "text": "and it'll go down to the list of the 15 features.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1862.16,
+        "end": 1865.36,
+        "text": "And that's where you can describe what the heck of verify is,",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1865.36,
+        "end": 1866.28,
+        "text": "or what the heck of manage.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1866.28,
+        "end": 1867.92,
+        "text": "OK, so we will have an opportunity",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1867.92,
+        "end": 1869.68,
+        "text": "because I was about to say you're going to hate me for this,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1869.68,
+        "end": 1873.44,
+        "text": "but like we're being sick of go about the same",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1873.44,
+        "end": 1878.16,
+        "text": "problem we had, which being the audience coming in and not knowing anything about these specific",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1878.16,
+        "end": 1885.28,
+        "text": "stages. That was one of the big things. It's like, okay, 15, 15 features. What? What are they?",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1885.28,
+        "end": 1892.88,
+        "text": "Why do I care? To say that means nothing to me looking at this page. But quick question.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1892.88,
+        "end": 1897.6,
+        "text": "I can be a Debbie Downer. That's it. No, we're on top of it. Actually, if you read the thread,",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 1897.6,
+        "end": 1902.8,
+        "text": "I brought that up, but she said we can't do it right now, which I understand. But a small thing,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1902.8,
+        "end": 1904,
+        "text": "What do you guys think about the colors?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1907.7,
+        "end": 1909.54,
+        "text": "I usually let the designers handle that stuff.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1909.54,
+        "end": 1910.26,
+        "text": "They...",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1910.26,
+        "end": 1912.26,
+        "text": "I like...",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1914.26,
+        "end": 1918.35,
+        "text": "I like the fact that there's no red on there.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1919.87,
+        "end": 1920.91,
+        "text": "That's what I was going for.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1920.91,
+        "end": 1921.87,
+        "text": "You like it?",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1921.87,
+        "end": 1924.67,
+        "text": "It's not obviously negative.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1925.15,
+        "end": 1930.59,
+        "text": "So we're saying because it really does lend itself to being a comparison more than a competitive piece",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1930.59,
+        "end": 1935.31,
+        "text": "because of that, because there's no, you know, these folks at 37% are in the red and they're terrible,",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 1935.31,
+        "end": 1941.15,
+        "text": "they just have less green or we would have less green. So it's not it's not being worse, it's being less",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1941.15,
+        "end": 1950.35,
+        "text": "good. And I think that lends itself to working with, you know, all the co-opitation situations we",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 1950.35,
+        "end": 1956.91,
+        "text": "were talking about. Yeah. Yeah, that's that's a goal is we want we want to generate a helpful asset",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1956.91,
+        "end": 1961.63,
+        "text": "for the industry. This is not just like marketing shill. This should be like a helpful page.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 1962.59,
+        "end": 1968.67,
+        "text": "So yeah, the goals have a comparison comparing DevOps tools, not a, you know, this is all of our",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 1968.67,
+        "end": 1974.43,
+        "text": "competitors and why we're better. Yeah. I think from a competitive mindset, and for me, I'm like,",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 1974.43,
+        "end": 1980.27,
+        "text": "let's go hard. Let's put some rent on there. Let's just the way I think, right? So, but I've",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1980.27,
+        "end": 1983.71,
+        "text": "avoided them. And that for now, we're going to stick with the green. They recommend it was stick with",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1983.71,
+        "end": 1985.63,
+        "text": "with the green and see how it goes.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 1985.63,
+        "end": 1989.03,
+        "text": "But I don't know, I was feeling the red and yellow, too.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1989.03,
+        "end": 1991.43,
+        "text": "So it is easy on the ice.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1991.43,
+        "end": 1993.39,
+        "text": "You know, there's something to be said to that.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 1993.39,
+        "end": 1994.9,
+        "text": "So yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1996.87,
+        "end": 1999.51,
+        "text": "Cool. Well, we're almost up on time,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 1999.51,
+        "end": 2002.82,
+        "text": "but I did want to share one thing that kind of came in,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2002.82,
+        "end": 2007.84,
+        "text": "like basically Friday, it was like late Thursday for me.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like",
+          "basically"
+        ]
+      },
+      {
+        "start": 2007.84,
+        "end": 2011.64,
+        "text": "So this, this is another thing, a lot of these things",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2011.64,
+        "end": 2014.48,
+        "text": "I don't have a ton of context on.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2014.48,
+        "end": 2016.58,
+        "text": "I just know like we're just trying to up our game.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2016.58,
+        "end": 2020.8,
+        "text": "So like, hey, let's move fast and do the best we can do.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2020.8,
+        "end": 2024.16,
+        "text": "So this is a little bit of a messaging framework.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2024.16,
+        "end": 2026.64,
+        "text": "And then the assignment that was given to me",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2026.64,
+        "end": 2030.14,
+        "text": "was to fill in these boxes here.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2030.14,
+        "end": 2036.42,
+        "text": "So, and then this was the fodder that I got.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2036.42,
+        "end": 2038.86,
+        "text": "So there was these ones that said like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2038.86,
+        "end": 2042.26,
+        "text": "from roadmap to company vision, we are transparent",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2042.26,
+        "end": 2045.46,
+        "text": "and a single source of truth countless possibilities.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2045.46,
+        "end": 2047.22,
+        "text": "Honestly, I think this one's really like really pithy",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2047.22,
+        "end": 2048.3,
+        "text": "and catchy.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2048.3,
+        "end": 2049.7,
+        "text": "I really like it.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2050.78,
+        "end": 2053.06,
+        "text": "I really liked what's the other one that I liked",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2053.06,
+        "end": 2054.34,
+        "text": "that not everyone does.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2056.73,
+        "end": 2058.65,
+        "text": "All in one for everyone.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2058.65,
+        "end": 2060.73,
+        "text": "So I just, I don't know, I like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2060.73,
+        "end": 2062.81,
+        "text": "I just think so there's something catchy about that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2063.81,
+        "end": 2066.01,
+        "text": "But I know that kind of catchy",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2066.01,
+        "end": 2067.81,
+        "text": "is not everyone's cup of tea.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2067.81,
+        "end": 2070.97,
+        "text": "All that to say is the assignment here",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2070.97,
+        "end": 2076.03,
+        "text": "was that I took it was to write a pithy few words",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2076.07,
+        "end": 2080.57,
+        "text": "like punchy statement for each of these three things.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2081.55,
+        "end": 2083.73,
+        "text": "So I ended up with a single source of truth,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2083.73,
+        "end": 2085.97,
+        "text": "countless possibilities, I liked that a lot.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2086.89,
+        "end": 2089.05,
+        "text": "This one I went with end-to-end control",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2089.05,
+        "end": 2091.93,
+        "text": "over your software factory, not as pithy",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2091.93,
+        "end": 2097.38,
+        "text": "but like not as catchy, but I think I...",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2097.38,
+        "end": 2103.3,
+        "text": "like what's the difference between that slide and the next one that doesn't have anything under security?",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2103.3,
+        "end": 2104.26,
+        "text": "What's the difference?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2104.26,
+        "end": 2113.31,
+        "text": "This was the honestly so that when I first got this, it didn't have this and it didn't have",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2113.31,
+        "end": 2117.31,
+        "text": "anything under security. So this was like, it was just your iteration of it.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2118.46,
+        "end": 2123.58,
+        "text": "Yeah, this is mine. This is I just put here so that I would have like the original statements like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 2123.58,
+        "end": 2124.58,
+        "text": "I'm kind of like that.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2124.58,
+        "end": 2134.84,
+        "text": "But, you know, this one I hate, scale up speed up, test up.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 2134.84,
+        "end": 2135.84,
+        "text": "I don't think anybody tests up.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2135.84,
+        "end": 2136.84,
+        "text": "I think that's really goofy.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2136.84,
+        "end": 2137.84,
+        "text": "So, hate it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2137.84,
+        "end": 2138.84,
+        "text": "This one I love.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2138.84,
+        "end": 2139.84,
+        "text": "That's for me.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2139.84,
+        "end": 2140.84,
+        "text": "I love it or hate it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2140.84,
+        "end": 2141.84,
+        "text": "Right.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2141.84,
+        "end": 2142.84,
+        "text": "I love how I love that.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2142.84,
+        "end": 2143.84,
+        "text": "I just bang on.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2143.84,
+        "end": 2146.84,
+        "text": "So anyway, the.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2146.84,
+        "end": 2150,
+        "text": "What I love in just in five minutes now.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2150,
+        "end": 2152,
+        "text": "And then we can kind of end the call.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2152,
+        "end": 2154.52,
+        "text": "and the call is kind of like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2157.13,
+        "end": 2158.61,
+        "text": "anything that you would change this out for,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2158.61,
+        "end": 2160.33,
+        "text": "anything that you would change this out for,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2160.33,
+        "end": 2163.17,
+        "text": "and then actually let's start here.",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 2163.17,
+        "end": 2166.16,
+        "text": "This one I couldn't pick,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2166.16,
+        "end": 2169,
+        "text": "and I'll tell you why it's because I like things",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2169,
+        "end": 2173.04,
+        "text": "to have parity in their tone, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2173.04,
+        "end": 2176.48,
+        "text": "So this is maybe like super nuanced elements of messaging,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2176.48,
+        "end": 2179.36,
+        "text": "but I hate it if it's like a single source of truth",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2179.36,
+        "end": 2183.16,
+        "text": "That's like in noun phrase and the end control.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2183.16,
+        "end": 2186.1,
+        "text": "That's like a noun item.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2186.1,
+        "end": 2187.66,
+        "text": "So you could say with GitLab,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2187.66,
+        "end": 2189.9,
+        "text": "you get a single source of truth.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2189.9,
+        "end": 2192.82,
+        "text": "With GitLab, you get end-to-end control.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2192.82,
+        "end": 2197.58,
+        "text": "And you can't say with GitLab, you get move fast with confidence.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2197.58,
+        "end": 2199.74,
+        "text": "No, but you can say more speedless risk.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2199.74,
+        "end": 2200.82,
+        "text": "I like that one the best.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2200.82,
+        "end": 2202.62,
+        "text": "I don't like the last one.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2202.62,
+        "end": 2203.82,
+        "text": "I agree.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2203.82,
+        "end": 2207.94,
+        "text": "That's why I put this one at top for that parody.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2207.94,
+        "end": 2210.74,
+        "text": "And then so it sounds like kind of y'all's thoughts",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2210.74,
+        "end": 2213.88,
+        "text": "or that's good as well.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2213.88,
+        "end": 2215.44,
+        "text": "Yeah, the only thing it might be missing",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2215.44,
+        "end": 2218.2,
+        "text": "but I don't know how we do it without over complicating it",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2218.2,
+        "end": 2221.64,
+        "text": "is, well, I guess less risk also",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2221.64,
+        "end": 2223.67,
+        "text": "implies higher quality.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2223.67,
+        "end": 2225.67,
+        "text": "I guess that kind of bundles the quality",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2225.67,
+        "end": 2227.23,
+        "text": "and the security together.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2227.23,
+        "end": 2230.19,
+        "text": "So I've talked myself out of not liking that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2230.19,
+        "end": 2232.21,
+        "text": "So yeah, good.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2232.21,
+        "end": 2235.25,
+        "text": "Cindy's last blog post had a really good turn of phrase",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2235.25,
+        "end": 2238.69,
+        "text": "that I stole for, for give that 14 and she was out.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2238.69,
+        "end": 2240.95,
+        "text": "It was like secure the software factory",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2240.95,
+        "end": 2243.69,
+        "text": "and all the stuff that you're making.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2243.69,
+        "end": 2245.05,
+        "text": "She said it really elegant.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2245.05,
+        "end": 2247.05,
+        "text": "And it's deliverables.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2247.05,
+        "end": 2249.81,
+        "text": "Secure the software factory and it's deliverables.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2249.81,
+        "end": 2251.81,
+        "text": "Yeah, I thought it was good to emphasize both,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2251.81,
+        "end": 2254.17,
+        "text": "because they mean that it's nuts.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2254.17,
+        "end": 2256.62,
+        "text": "Yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2256.62,
+        "end": 2259.98,
+        "text": "Yeah, so you could say secure and control",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2259.98,
+        "end": 2262.54,
+        "text": "your software factory and it's deliverables.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2262.54,
+        "end": 2266.3,
+        "text": "Maybe that would encompass both thoughts.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2266.3,
+        "end": 2274.86,
+        "text": "I'm not a big fan of the, it's deliverables,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2274.86,
+        "end": 2277.7,
+        "text": "is there, can we say like,",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2277.7,
+        "end": 2279.5,
+        "text": "your software factory and your software,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2279.5,
+        "end": 2283.87,
+        "text": "or your software and your product?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2283.87,
+        "end": 2287.29,
+        "text": "Product sounds like car manufacturer.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2287.29,
+        "end": 2289.61,
+        "text": "You could say IP here, but it just doesn't sound right.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2289.61,
+        "end": 2292.65,
+        "text": "And that's always to always short hand.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2292.65,
+        "end": 2294.29,
+        "text": "Yeah.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2294.29,
+        "end": 2299.09,
+        "text": "I like this one better.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2299.09,
+        "end": 2301.13,
+        "text": "Yeah, I think I do too.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2301.13,
+        "end": 2306.6,
+        "text": "But I appreciate the thought, Brian.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2306.6,
+        "end": 2309.08,
+        "text": "And then the last thing I'll say is,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2309.08,
+        "end": 2314.38,
+        "text": "so this is my attempt to channel my inner ash withers.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2314.38,
+        "end": 2319.02,
+        "text": "I think ash is super good at just, again,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2319.02,
+        "end": 2324.01,
+        "text": "just like the catchier, like the turn of phrase element to it.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 2324.01,
+        "end": 2326.93,
+        "text": "And so like this kind of idea, like single source of truth",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 2326.93,
+        "end": 2328.45,
+        "text": "countless possibilities.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2328.45,
+        "end": 2330.85,
+        "text": "Or all in one for everyone, there's",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2330.85,
+        "end": 2335.81,
+        "text": "something catchy about this. So here I was trying to envision, what is it that we actually",
+        "isQuestion": true,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 2335.81,
+        "end": 2340.85,
+        "text": "give you with this velocity? It's like, it's velocity with confidence is what you get.",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2342.61,
+        "end": 2346.85,
+        "text": "I like your move fast with confidence better than increase speed and stay on track.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2347.81,
+        "end": 2353.49,
+        "text": "Yeah, so I was trying to, I was thinking of like, you know, if you're like, if you're in a race car",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like",
+          "you know"
+        ]
+      },
+      {
+        "start": 2354.13,
+        "end": 2358.21,
+        "text": "and like, you go like super, super fast, like let's say you're in the bike race, right?",
+        "isQuestion": true,
+        "fillerWords": [
+          "like",
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 2358.21,
+        "end": 2363.17,
+        "text": "and you're going so fast and somebody holds out the sign and then half of the bike race collapses.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2366.69,
+        "end": 2371.17,
+        "text": "It's almost kind of like you can keep going faster and faster and faster.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2371.17,
+        "end": 2375.89,
+        "text": "And if somebody jumps out with a sign in the middle of the racetrack, you're not going to get",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2375.89,
+        "end": 2380.85,
+        "text": "tripped up by it because Git Labs, it's testing is going to catch that, it's security is going to catch",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2380.85,
+        "end": 2386.85,
+        "text": "that. All of those elements that allow you to move faster but to do so with confidence. Because otherwise",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2386.85,
+        "end": 2390.27,
+        "text": "as you're like the faster you go than it gets more dangerous.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2390.27,
+        "end": 2391.59,
+        "text": "So trying to encapsulate that in this,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2391.59,
+        "end": 2393.71,
+        "text": "like that was kind of where I was like, stay on track,",
+        "isQuestion": true,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 2393.71,
+        "end": 2395.63,
+        "text": "but I didn't like it either.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2395.63,
+        "end": 2397.15,
+        "text": "Did you just open the door?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2397.15,
+        "end": 2398.83,
+        "text": "Or NASCAR partnership?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2398.83,
+        "end": 2402.75,
+        "text": "Hey, NASCAR goes fast in terms of left,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2402.75,
+        "end": 2404.07,
+        "text": "cause it get loud.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2404.07,
+        "end": 2408.79,
+        "text": "So you're a new Ricky Bondi.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2408.79,
+        "end": 2409.63,
+        "text": "You're a new Ricky Bondi.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2409.63,
+        "end": 2412.19,
+        "text": "Yeah, so I don't think I like that one.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2412.19,
+        "end": 2414.15,
+        "text": "And then I think between these two,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2414.15,
+        "end": 2415.79,
+        "text": "I like to move fast with confidence,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2415.79,
+        "end": 2418.51,
+        "text": "but I don't like the the verbiage of it",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2418.51,
+        "end": 2419.95,
+        "text": "because it doesn't have parity.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2419.95,
+        "end": 2421.63,
+        "text": "So that's where I think more people need to do.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2421.63,
+        "end": 2425.35,
+        "text": "Do you wanna add, maybe we can add high confidence",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2425.35,
+        "end": 2427.95,
+        "text": "or more confidence at the end of your first statement.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2427.95,
+        "end": 2430.77,
+        "text": "So it kind of combines all of it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2430.77,
+        "end": 2433.85,
+        "text": "So more speed less risk high confidence.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2433.85,
+        "end": 2436.25,
+        "text": "I was just saying confidence is kind of overused anyway.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2436.25,
+        "end": 2438.73,
+        "text": "Like I see a lot of competitors of vendors using it.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2438.73,
+        "end": 2439.81,
+        "text": "I really like the first one.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2439.81,
+        "end": 2441.53,
+        "text": "Just more speed less risk.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2441.53,
+        "end": 2443.53,
+        "text": "Bam, no trade-offs, you know, just,",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 2443.53,
+        "end": 2444.37,
+        "text": "is how it is.",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2446.13,
+        "end": 2448.38,
+        "text": "Oh, no trade offs.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2448.38,
+        "end": 2449.22,
+        "text": "I don't know.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2449.22,
+        "end": 2450.06,
+        "text": "That's one of my go-to's.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2450.06,
+        "end": 2451.06,
+        "text": "I love that one.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2452.46,
+        "end": 2456.86,
+        "text": "This gets into the no trade offs.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2456.86,
+        "end": 2459.14,
+        "text": "The engineer in me says,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2459.14,
+        "end": 2461.18,
+        "text": "there's never no trade offs.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2461.18,
+        "end": 2464.14,
+        "text": "That's like saying like 100% secure.",
+        "isQuestion": false,
+        "fillerWords": [
+          "like",
+          "like"
+        ]
+      },
+      {
+        "start": 2464.14,
+        "end": 2464.98,
+        "text": "Complete.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2464.98,
+        "end": 2466.62,
+        "text": "This is why we always say mitigate, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2466.62,
+        "end": 2469.34,
+        "text": "We always feel at risk or less risk.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2469.34,
+        "end": 2470.38,
+        "text": "You never say no to that.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2470.38,
+        "end": 2471.22,
+        "text": "You never say no.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2471.22,
+        "end": 2472.22,
+        "text": "You never say no to messaging, right?",
+        "isQuestion": true,
+        "fillerWords": []
+      },
+      {
+        "start": 2472.22,
+        "end": 2477.02,
+        "text": "everything you know. I'm just more speed less risk with confidence.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 2481.76,
+        "end": 2490.94,
+        "text": "What yeah, more speed. The Ricky Bobby and me really did like the no trade off so that",
+        "isQuestion": true,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2490.94,
+        "end": 2496.94,
+        "text": "Parker. Yeah. Oh was that was that from uh no but it could have been it's something Ricky Bobby",
+        "isQuestion": false,
+        "fillerWords": [
+          "uh"
+        ]
+      },
+      {
+        "start": 2496.94,
+        "end": 2501.34,
+        "text": "would have said. If anyone hasn't seen Telodeganites they should. That's the homework for this weekend.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2501.34,
+        "end": 2505.82,
+        "text": "in the Saturday as we talk about it on Monday and our little social",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2505.82,
+        "end": 2511.34,
+        "text": "work. I often say thank you little eight pound five ounce baby.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2511.34,
+        "end": 2515.5,
+        "text": "Just with the golden diapers. I say that so often that I just think everybody has",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2515.5,
+        "end": 2518.78,
+        "text": "seen Taladegan nights but then I realize that people that haven't are like",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2518.78,
+        "end": 2523.9,
+        "text": "playing is really weird. And then next week we'll watch Step Brothers.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2523.9,
+        "end": 2528.66,
+        "text": "That's another great one. So much room for activities.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2528.66,
+        "end": 2533.34,
+        "text": "Okay, I'm gonna go with more speed less risk.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2533.34,
+        "end": 2537.29,
+        "text": "And I think this is due at the end of the day,",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2537.29,
+        "end": 2542.05,
+        "text": "so any additional thoughts I'm actually gonna untag.",
+        "isQuestion": false,
+        "fillerWords": [
+          "actually"
+        ]
+      },
+      {
+        "start": 2542.05,
+        "end": 2545.81,
+        "text": "I mean, strong, all those are, you know, cool.",
+        "isQuestion": false,
+        "fillerWords": [
+          "you know"
+        ]
+      },
+      {
+        "start": 2545.81,
+        "end": 2547.05,
+        "text": "Those are good.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2547.05,
+        "end": 2547.89,
+        "text": "Awesome.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2547.89,
+        "end": 2550.65,
+        "text": "Well, this was kind of fun to do a little bit of like,",
+        "isQuestion": false,
+        "fillerWords": [
+          "like"
+        ]
+      },
+      {
+        "start": 2550.65,
+        "end": 2554.23,
+        "text": "working together session and keep it.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2554.23,
+        "end": 2555.47,
+        "text": "Oh, last one, dance one.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2555.47,
+        "end": 2558.54,
+        "text": "Keep it rocking.",
+        "isQuestion": false,
+        "fillerWords": []
+      },
+      {
+        "start": 2558.54,
+        "end": 2560.54,
+        "text": "Good to see everybody. See you soon.",
+        "isQuestion": false,
+        "fillerWords": []
+      }
+    ],
+    "questions": [
+      "but did you all, were you all able to connect with",
+      "Yeah, do you all, does anybody have like a regular sink",
+      "still are those all been canceled?",
+      "Or is there a whole second?",
+      "next and get ups on kube con. Does that sound right? Yeah. Yeah. That's where we were last I heard.",
+      "can you comment on the issue that,",
+      "One is over what timeframe are we looking at?",
+      "lunch where we're saying basically since 13.0,",
+      "what kind of big improvements have we made?",
+      "because we're having an event, right?",
+      "What kind of announcements do we make?",
+      "okay, like what started in the last year",
+      "what would be coming out of beta?",
+      "when we started a beta program in this last year,",
+      "what would be announcing is GA at commit?",
+      "So what do you think, Sydney?",
+      "and plug them in here?",
+      "And are we trying to hit three per stage?",
+      "But can I show what I did for SCN just to get some general",
+      "feedback on it?",
+      "Like Windows 11 or anybody who's rolling stuff out,",
+      "and bucketing some things there, but actually when I looked around,",
+      "that's pretty much how everybody does a big launch.",
+      "I wasn't sure exactly where to place things.",
+      "And so that's kind of how I came down on it.",
+      "which is also kind of cool. Is that, do we have VS Code listed on here?",
+      "We did that with our Terraform module, right?",
+      "How are we measuring excitement levels?",
+      "But of course, we need a benchmark level of what MAU we want to go on one, two, three.",
+      "Now, depending on how it's asked for, maybe that means it's exciting or it's not, right?",
+      "But usually when something gets a lot of upvotes",
+      "or when there's a lot of demand for it,",
+      "just like what is your feeling based on, you know,",
+      "I was responded to my comment about why we have",
+      "I started by just looking at what was considered",
+      "where we then try to stack rank in PRs.",
+      "What about the new Pencristy's product keynote at Komet?",
+      "Are we going to tell him this with that?",
+      "So this is exactly where this is headed to.",
+      "So that's kind of where it's coming from.",
+      "Just go through the list of what shipped in the last 12 months and re-buck at that.",
+      "So maybe we can do like five minutes kind of like just just time box and kind of look at these here. What do you all think is a top would be a top five out of the list of you know 20 or 30.",
+      "Okay. What else?",
+      "I was when I've been struggling with a little bit as I'd like to kind of group the some",
+      "So it was last summer, right?",
+      "But right, that's what I was saying is that the,",
+      "which would you pick as the number one out of those two?",
+      "Uh, I was really, I don't, did you all, did anybody miss, uh, what do we call it?",
+      "assembly, the assembly. If you missed it, I recommend it. I laughed because like what assembly reminds me of it like when I was in like a young child in grade school.",
+      "So that's how to put everyone in the gym",
+      "So, Samia, you have some questions here for Alita?",
+      "So I just wanted your input on what's because I saw some of you have compared with the five",
+      "not be relevant for monitor stage at all. So that's what I wanted to check with you.",
+      "So are you saying that you see competitors on that tab for a stage where they don't apply?",
+      "Yeah, we hear them. That's when we tear them, right? Tear one, tear two, two, three.",
+      "So this, this, where we are right now is we're looking at just tier one competitors.",
+      "That's probably why I cut and paste them because those are all tier ones.",
+      "I think you asked me that before, right?",
+      "So ideally, when we picked like the 10 to 15 features,",
+      "Well, I thought it was supposed to be not, none of them should be get lab only, right?",
+      "this is what I'm shopping for, this solution. Some, like some of them might be GitLab only,",
+      "But what is it?",
+      "of what monitor can figure you mean.",
+      "that the design team has come up with?",
+      "Let's see who can find it faster.",
+      "Oh my God, that's what I'm like.",
+      "So this is why I send everything to Google Gmail because the search is so fast.",
+      "I literally have a folder where all of my GitLab things go and I can just search for",
+      "It would it would have been like a whole nother layer of, okay, if we don't go with just to get laps stages, the 10 stages, what what do we use?",
+      "Like, you know, we kind of, I don't know how long it's been since we updated.",
+      "But the place where it will, so actually I'll share one thing.",
+      "It just seems like the right time to do this, right?",
+      "where the underlying data remains the same, right?",
+      "in the future as it currently is where it's a massive spaghetti",
+      "And that's where you can describe what the heck of verify is,",
+      "or what the heck of manage.",
+      "stages. That was one of the big things. It's like, okay, 15, 15 features. What? What are they?",
+      "Why do I care? To say that means nothing to me looking at this page. But quick question.",
+      "What do you guys think about the colors?",
+      "That's what I was going for.",
+      "You like it?",
+      "competitors and why we're better. Yeah. I think from a competitive mindset, and for me, I'm like,",
+      "with the green and see how it goes.",
+      "I really liked what's the other one that I liked",
+      "like what's the difference between that slide and the next one that doesn't have anything under security?",
+      "What's the difference?",
+      "This was the honestly so that when I first got this, it didn't have this and it didn't have",
+      "I love how I love that.",
+      "What I love in just in five minutes now.",
+      "and I'll tell you why it's because I like things",
+      "to have parity in their tone, right?",
+      "That's why I put this one at top for that parody.",
+      "but I don't know how we do it without over complicating it",
+      "is there, can we say like,",
+      "or your software and your product?",
+      "something catchy about this. So here I was trying to envision, what is it that we actually",
+      "give you with this velocity? It's like, it's velocity with confidence is what you get.",
+      "and like, you go like super, super fast, like let's say you're in the bike race, right?",
+      "like that was kind of where I was like, stay on track,",
+      "Did you just open the door?",
+      "Or NASCAR partnership?",
+      "So that's where I think more people need to do.",
+      "Do you wanna add, maybe we can add high confidence",
+      "is how it is.",
+      "This is why we always say mitigate, right?",
+      "You never say no to messaging, right?",
+      "What yeah, more speed. The Ricky Bobby and me really did like the no trade off so that"
+    ],
+    "fillerWords": [
+      "like",
+      "like",
+      "like",
+      "actually",
+      "you know",
+      "like",
+      "like",
+      "like",
+      "like",
+      "basically",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "you know",
+      "actually",
+      "you know",
+      "like",
+      "like",
+      "like",
+      "actually",
+      "like",
+      "you know",
+      "like",
+      "actually",
+      "like",
+      "like",
+      "like",
+      "actually",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "you know",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "actually",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "you know",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "actually",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "uh",
+      "uh",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "basically",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "um",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "actually",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "actually",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "you know",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "basically",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "actually",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "actually",
+      "like",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "like",
+      "you know",
+      "like",
+      "uh",
+      "like",
+      "actually",
+      "you know",
+      "like"
+    ]
+  },
+  "metrics": {
+    "durationSeconds": 2560.58,
+    "totalWords": 6563,
+    "speakingRateWpm": 153.79,
+    "questionsCount": 107,
+    "fillerWordCount": 195,
+    "fillerFrequencyPerMinute": 4.57,
+    "pauseCount": 416,
+    "avgPauseDurationSeconds": 0.97,
+    "longestPauseDurationSeconds": 5.38,
+    "energyMean": 0.032425,
+    "energyStd": 0.03068,
+    "pitchMean": 527.62,
+    "pitchStd": 597.94
+  },
+  "indicators": {
+    "confidence": {
+      "score": 48.1,
+      "classification": "Moderate",
+      "explanation": "Reasonable fluency with some hesitations and occasional long pauses affecting confidence."
+    },
+    "engagement": {
+      "score": 55.1,
+      "classification": "Moderate",
+      "explanation": "Moderate engagement with some active moments and reasonable conversational contribution."
+    },
+    "hesitation": {
+      "score": 34.6,
+      "classification": "Moderate",
+      "explanation": "Some hesitation detected, suggesting occasional uncertainty or pauses for thought."
+    },
+    "curiosity": {
+      "score": 52.9,
+      "classification": "Moderate",
+      "explanation": "Moderate curiosity — some questions and engagement with the subject matter."
+    },
+    "attentiveness": {
+      "score": 52.2,
+      "classification": "Moderate",
+      "explanation": "Generally engaged but with noticeable lapses in consistency."
+    }
+  },
+  "summary": {
+    "overall": "The conversation showed moderate engagement with notable strengths and some areas that could benefit from improvement.",
+    "positiveObservations": [
+      "The participant maintained consistent participation throughout the session."
+    ],
+    "areasOfAttention": [
+      "Extended pauses (up to 5.4s) noted during the session."
+    ],
+    "recommendations": [
+      "Practice replacing filler words with deliberate pauses to improve perceived confidence.",
+      "Address complex topics earlier in the conversation to reduce moments of uncertainty.",
+      "Reinforce trust-building through structured, confident communication patterns.",
+      "Increase vocal variety and active participation to signal higher engagement."
+    ]
+  },
+  "speakers": {},
+  "pdfAvailable": true
+}

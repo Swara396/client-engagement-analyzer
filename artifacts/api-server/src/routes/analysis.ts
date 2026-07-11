@@ -80,7 +80,7 @@ async function runPython(
   args: string[],
   extraEnv: Record<string, string> = {}
 ): Promise<{ stdout: string; stderr: string }> {
-  const pythonBin = process.env.PYTHON_BIN || "python3";
+  const pythonBin = process.env.PYTHON_BIN || "python";
   const scriptPath = path.join(PYTHON_DIR, script);
   return execFileAsync(pythonBin, [scriptPath, ...args], {
     timeout: 0,
@@ -330,8 +330,170 @@ router.get("/transcript/:id", (req, res) => {
   });
 });
 
+// GET /api/report/demo — fully pre-built simulated sales call report
+const DEMO_REPORT = {
+  id: "demo",
+  date: "2025-03-14T10:22:00.000Z",
+  filename: "sales-call-acme-corp-Q1.mp3",
+  hasDiarization: true,
+  pdfAvailable: true,
+  transcript: {
+    id: "demo",
+    fullText:
+      "Hi Sarah, thanks for making time today. I wanted to walk you through what we've been seeing in your sector. " +
+      "Um, so first of all, how has the quarter been treating you? Yeah, that's actually a great point. " +
+      "We've seen similar patterns across our client base. Can you tell me more about the budget cycle for Q2? " +
+      "Basically we have about three months to close this. What are the main blockers on your end right now? " +
+      "That makes sense. Uh, so if we could address the integration concern, would that move things forward? " +
+      "Absolutely. And you know, we have a dedicated onboarding team that handles exactly that. " +
+      "What does your procurement process look like from here? " +
+      "Right, so the legal review typically takes two to three weeks on our side as well. " +
+      "Can we schedule a technical call with your IT team next week? " +
+      "That sounds great. Um, I'll send over the security documentation today. " +
+      "One more thing — what would success look like for you at the six-month mark? " +
+      "Perfect. I think we're well-aligned on that. Let's lock in the next steps.",
+    segments: [
+      { start: 0.0,   end: 6.4,  text: "Hi Sarah, thanks for making time today. I wanted to walk you through what we've been seeing in your sector.", speaker: "SPEAKER_00", isQuestion: false, fillerWords: [] },
+      { start: 6.9,   end: 10.1, text: "Um, so first of all, how has the quarter been treating you?", speaker: "SPEAKER_00", isQuestion: true,  fillerWords: ["Um"] },
+      { start: 11.0,  end: 16.8, text: "Yeah, that's actually a great point. We've seen similar patterns across our client base.", speaker: "SPEAKER_01", isQuestion: false, fillerWords: ["actually"] },
+      { start: 17.5,  end: 21.2, text: "Can you tell me more about the budget cycle for Q2?", speaker: "SPEAKER_00", isQuestion: true,  fillerWords: [] },
+      { start: 21.9,  end: 26.3, text: "Basically we have about three months to close this.", speaker: "SPEAKER_01", isQuestion: false, fillerWords: ["Basically"] },
+      { start: 27.0,  end: 31.4, text: "What are the main blockers on your end right now?", speaker: "SPEAKER_00", isQuestion: true,  fillerWords: [] },
+      { start: 32.1,  end: 39.7, text: "That makes sense. Uh, so if we could address the integration concern, would that move things forward?", speaker: "SPEAKER_00", isQuestion: true,  fillerWords: ["Uh"] },
+      { start: 40.5,  end: 47.2, text: "Absolutely. And you know, we have a dedicated onboarding team that handles exactly that.", speaker: "SPEAKER_01", isQuestion: false, fillerWords: ["you know"] },
+      { start: 48.0,  end: 52.6, text: "What does your procurement process look like from here?", speaker: "SPEAKER_00", isQuestion: true,  fillerWords: [] },
+      { start: 53.3,  end: 59.8, text: "Right, so the legal review typically takes two to three weeks on our side as well.", speaker: "SPEAKER_01", isQuestion: false, fillerWords: [] },
+      { start: 60.5,  end: 65.1, text: "Can we schedule a technical call with your IT team next week?", speaker: "SPEAKER_00", isQuestion: true,  fillerWords: [] },
+      { start: 65.9,  end: 71.4, text: "That sounds great. Um, I'll send over the security documentation today.", speaker: "SPEAKER_00", isQuestion: false, fillerWords: ["Um"] },
+      { start: 72.2,  end: 78.9, text: "One more thing — what would success look like for you at the six-month mark?", speaker: "SPEAKER_00", isQuestion: true,  fillerWords: [] },
+      { start: 79.7,  end: 85.3, text: "Perfect. I think we're well-aligned on that. Let's lock in the next steps.", speaker: "SPEAKER_01", isQuestion: false, fillerWords: [] },
+    ],
+    questions: [
+      "Um, so first of all, how has the quarter been treating you?",
+      "Can you tell me more about the budget cycle for Q2?",
+      "What are the main blockers on your end right now?",
+      "Uh, so if we could address the integration concern, would that move things forward?",
+      "What does your procurement process look like from here?",
+      "Can we schedule a technical call with your IT team next week?",
+      "One more thing — what would success look like for you at the six-month mark?",
+    ],
+    fillerWords: ["Um", "actually", "Basically", "Uh", "you know", "Um"],
+  },
+  metrics: {
+    durationSeconds: 514,
+    totalWords: 187,
+    speakingRateWpm: 131.2,
+    questionsCount: 7,
+    fillerWordCount: 6,
+    fillerFrequencyPerMinute: 0.7,
+    pauseCount: 18,
+    avgPauseDurationSeconds: 0.64,
+    longestPauseDurationSeconds: 2.8,
+    energyMean: 0.052,
+    energyStd: 0.018,
+    pitchMean: 168.4,
+    pitchStd: 31.2,
+  },
+  indicators: {
+    confidence: {
+      score: 74.6,
+      classification: "High",
+      explanation: "Strong fluency and consistent pacing with minimal pauses and few filler words.",
+    },
+    engagement: {
+      score: 68.3,
+      classification: "High",
+      explanation: "Strong engagement — active questioning, sustained vocal energy, and high speaking activity.",
+    },
+    hesitation: {
+      score: 22.1,
+      classification: "Low",
+      explanation: "Minimal hesitation — clear, fluent delivery with few interruptions.",
+    },
+    curiosity: {
+      score: 81.5,
+      classification: "High",
+      explanation: "Strong curiosity — frequent questions and clarification requests throughout.",
+    },
+    attentiveness: {
+      score: 71.8,
+      classification: "High",
+      explanation: "Consistent attention — steady pacing and sustained vocal engagement throughout.",
+    },
+  },
+  summary: {
+    overall:
+      "The participant demonstrated strong overall engagement and communicative confidence throughout the conversation. Active discovery questioning and minimal hesitation markers indicate a highly effective sales interaction.",
+    positiveObservations: [
+      "Strong vocal confidence with minimal filler words and consistent pacing.",
+      "High engagement demonstrated through active questioning and sustained speaking activity.",
+      "Exceptional curiosity with frequent clarifying questions throughout the discussion.",
+      "Optimal speaking rate (110–150 WPM) for clear communication.",
+    ],
+    areasOfAttention: [
+      "No significant areas of concern were identified in this session.",
+    ],
+    recommendations: [
+      "Maintain current communication style — metrics reflect strong performance.",
+      "Consider deepening next-step commitments to accelerate deal velocity.",
+    ],
+  },
+  speakers: {
+    SPEAKER_00: {
+      label: "Speaker 1 (Sales Rep)",
+      speakingTimeSeconds: 312,
+      participationPct: 60.7,
+      wordCount: 118,
+      speakingRateWpm: 136.5,
+      questionsCount: 7,
+      fillerWordCount: 4,
+      fillerFrequencyPerMinute: 0.8,
+      indicators: {
+        confidence:    { score: 76.2, classification: "High",     explanation: "Confident delivery with structured questioning and minimal hesitation." },
+        engagement:    { score: 72.4, classification: "High",     explanation: "Strong engagement — active questioning and sustained vocal energy." },
+        hesitation:    { score: 18.3, classification: "Low",      explanation: "Very few hesitation markers — fluent and purposeful speech." },
+        curiosity:     { score: 87.1, classification: "High",     explanation: "Exceptional curiosity — seven targeted discovery questions." },
+        attentiveness: { score: 74.5, classification: "High",     explanation: "Steady pacing and consistent follow-up signals strong attentiveness." },
+      },
+      summary: {
+        overall: "The sales rep demonstrated excellent discovery technique with consistent confidence and high curiosity throughout.",
+        positiveObservations: ["Strong vocal confidence with minimal filler words.", "High curiosity with frequent discovery questions."],
+        areasOfAttention: ["No significant areas of concern."],
+        recommendations: ["Maintain current communication style — metrics reflect strong performance."],
+      },
+    },
+    SPEAKER_01: {
+      label: "Speaker 2 (Client)",
+      speakingTimeSeconds: 202,
+      participationPct: 39.3,
+      wordCount: 69,
+      speakingRateWpm: 120.8,
+      questionsCount: 0,
+      fillerWordCount: 2,
+      fillerFrequencyPerMinute: 0.6,
+      indicators: {
+        confidence:    { score: 61.4, classification: "Moderate", explanation: "Reasonable fluency with some hedging language and moderate pacing." },
+        engagement:    { score: 55.9, classification: "Moderate", explanation: "Moderate engagement — responsive but limited proactive contribution." },
+        hesitation:    { score: 31.7, classification: "Low",      explanation: "Some hesitation detected but overall delivery remains clear." },
+        curiosity:     { score: 28.4, classification: "Low",      explanation: "Few questions posed — mostly responding rather than initiating." },
+        attentiveness: { score: 63.2, classification: "Moderate", explanation: "Generally engaged with noticeable but minor lapses in continuity." },
+      },
+      summary: {
+        overall: "The client was responsive and engaged, providing clear answers with moderate vocal confidence.",
+        positiveObservations: ["Clear answers with low filler frequency.", "Consistent response continuity throughout."],
+        areasOfAttention: ["Low question frequency indicates a passive conversational role."],
+        recommendations: ["Encourage open-ended questions to deepen engagement."],
+      },
+    },
+  },
+};
+
 // GET /api/report/:id
 router.get("/report/:id", (req, res) => {
+  if (req.params.id === "demo") {
+    res.json(DEMO_REPORT);
+    return;
+  }
   const report = loadReport(req.params.id);
   if (!report) {
     res.status(404).json({ error: "Report not found" });
@@ -341,13 +503,35 @@ router.get("/report/:id", (req, res) => {
 });
 
 // GET /api/download-pdf/:id
-router.get("/download-pdf/:id", (req, res) => {
+// Special case: "demo" generates the PDF on-demand from the in-memory demo
+// report, caching it in REPORTS_DIR so subsequent downloads are instant.
+router.get("/download-pdf/:id", async (req, res) => {
   const { id } = req.params;
   const pdfPath = path.join(REPORTS_DIR, `${id}.pdf`);
+
+  if (id === "demo" && !fs.existsSync(pdfPath)) {
+    // Write the demo report JSON so generate_pdf.py can read it
+    const demoJsonPath = path.join(REPORTS_DIR, "demo.json");
+    try {
+      fs.writeFileSync(demoJsonPath, JSON.stringify(DEMO_REPORT, null, 2));
+      const { stdout } = await runPython("generate_pdf.py", [demoJsonPath, pdfPath]);
+      const result = JSON.parse(stdout.trim());
+      if (result.error) {
+        res.status(500).json({ error: `PDF generation failed: ${result.error}` });
+        return;
+      }
+    } catch (err: any) {
+      logger.error({ err }, "Demo PDF generation failed");
+      res.status(500).json({ error: "Could not generate demo PDF. Check server logs." });
+      return;
+    }
+  }
+
   if (!fs.existsSync(pdfPath)) {
     res.status(404).json({ error: "PDF not found. Run analysis first." });
     return;
   }
+
   res.setHeader("Content-Type", "application/pdf");
   res.setHeader("Content-Disposition", `attachment; filename="report-${id}.pdf"`);
   fs.createReadStream(pdfPath).pipe(res as any);

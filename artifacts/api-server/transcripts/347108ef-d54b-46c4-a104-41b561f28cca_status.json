@@ -1,0 +1,6 @@
+{
+  "status": "error",
+  "step": null,
+  "error": "Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.\r\n",
+  "startedAt": "2026-06-20T16:15:18.050Z"
+}

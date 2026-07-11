@@ -15,7 +15,8 @@ if (Number.isNaN(port) || port <= 0) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
-app.listen(port, (err) => {
+// Start the server and assign it to a variable to tweak configuration properties
+const server = app.listen(port, "0.0.0.0", (err?: any) => {
   if (err) {
     logger.error({ err }, "Error listening on port");
     process.exit(1);
@@ -23,3 +24,8 @@ app.listen(port, (err) => {
 
   logger.info({ port }, "Server listening");
 });
+
+// Give heavy CPU tasks (like large audio diarization) up to 15 minutes to finish
+if (server) {
+  server.timeout = 900000; // 15 minutes in milliseconds
+}

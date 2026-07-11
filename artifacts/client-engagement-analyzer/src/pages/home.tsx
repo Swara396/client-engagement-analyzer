@@ -1,8 +1,14 @@
-import { Link } from "wouter";
-import { ArrowRight, Brain, Mic, PieChart, ShieldCheck, UploadCloud } from "lucide-react";
+import { Link, useLocation } from "wouter";
+import { ArrowRight, Brain, Mic, PieChart, ShieldCheck, UploadCloud, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Home() {
+  const [, navigate] = useLocation();
+
+  function loadDemoReport() {
+    navigate("/results/demo");
+  }
+
   return (
     <div className="flex flex-col flex-1">
       {/* Hero Section */}
@@ -19,7 +25,7 @@ export function Home() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             A precision instrument for analyzing client conversations. Uncover subtle engagement markers, speaking metrics, and cognitive indicators with clinical accuracy.
           </p>
-          <div className="flex items-center justify-center gap-4 pt-8">
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-8">
             <Link href="/analyze" className="inline-flex">
               <Button size="lg" className="h-14 px-8 text-base shadow-lg">
                 <UploadCloud className="w-5 h-5 mr-2" />
@@ -32,6 +38,15 @@ export function Home() {
                 Record Live
               </Button>
             </Link>
+            <Button
+              size="lg"
+              variant="ghost"
+              className="h-14 px-8 text-base border border-border hover:bg-primary/5 hover:text-primary hover:border-primary/30 transition-all"
+              onClick={loadDemoReport}
+            >
+              <Play className="w-5 h-5 mr-2" />
+              Load Simulated Sales Report
+            </Button>
           </div>
         </div>
       </section>

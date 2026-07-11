@@ -1,0 +1,42 @@
+{
+  "indicators": {
+    "confidence": {
+      "score": 54.1,
+      "classification": "Moderate",
+      "explanation": "Reasonable fluency with some hesitations and occasional long pauses affecting confidence."
+    },
+    "engagement": {
+      "score": 56.4,
+      "classification": "Moderate",
+      "explanation": "Moderate engagement with some active moments and reasonable conversational contribution."
+    },
+    "hesitation": {
+      "score": 13.4,
+      "classification": "Low",
+      "explanation": "Minimal hesitation \u2014 clear, fluent delivery with few interruptions."
+    },
+    "curiosity": {
+      "score": 52.4,
+      "classification": "Moderate",
+      "explanation": "Moderate curiosity \u2014 some questions and engagement with the subject matter."
+    },
+    "attentiveness": {
+      "score": 51.2,
+      "classification": "Moderate",
+      "explanation": "Generally engaged but with noticeable lapses in consistency."
+    }
+  },
+  "summary": {
+    "overall": "The conversation showed moderate engagement with notable strengths and some areas that could benefit from improvement.",
+    "positiveObservations": [
+      "Fluent delivery with minimal hesitation markers or extended pauses."
+    ],
+    "areasOfAttention": [
+      "No significant areas of concern were identified in this session."
+    ],
+    "recommendations": [
+      "Reinforce trust-building through structured, confident communication patterns.",
+      "Increase vocal variety and active participation to signal higher engagement."
+    ]
+  }
+}
